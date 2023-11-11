@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.16.0",
+    "@fontsource/plus-jakarta-sans": "^5.0.17",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.3",
     "@svgr/webpack": "5.5.0",
     "@testing-library/jest-dom": "5.14.1",
@@ -88,7 +89,8 @@
   },
   "devDependencies": {
     "@types/styled-components": "5.1.26",
-    "babel-plugin-styled-components": "2.0.7"
+    "babel-plugin-styled-components": "2.0.7",
+    "prettier": "3.0.3"
   },
   "jest": {
     "roots": [
