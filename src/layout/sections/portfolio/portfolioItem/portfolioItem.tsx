@@ -13,7 +13,7 @@ export const PortfolioItem = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.
           </StyledDescription>
-          <a>See project</a>
+          <a href={'#'}>See project</a>
         </Wrapper>
       </FlexWrapper>
     </StyledPortfolioItem>
