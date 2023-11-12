@@ -1,22 +1,30 @@
 import photo from 'assets/SAVE_20200927_223544.webp'
 import styled from 'styled-components'
 import { FlexWrapper } from 'components/flex-wrapper'
+import { Button } from 'components/button/button'
 
 export const Main = () => {
   return (
     <StyledMain>
-      <FlexWrapper justify={'center'} align={'center'}>
+      <FlexWrapper gap={'50px'} align={'center'} justify={'center'}>
         <Photo src={photo} alt={'main-photo'} />
-        <div>
+        <FlexWrapper direction={'column'} gap={'30px'}>
           <Name>Oksana Kovalchuk</Name>
           <MainTitle>Frontend Developer, Minsk</MainTitle>
-        </div>
+          <FlexWrapper gap={'20px'}>
+            <Button title={'Send Message'} />
+            <Button title={'Download CV'} />
+          </FlexWrapper>
+        </FlexWrapper>
       </FlexWrapper>
     </StyledMain>
   )
 }
 
 const StyledMain = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   background-color: cornsilk;
 `
