@@ -16,7 +16,7 @@ export const Main = () => {
             <MainTitle>Frontend Developer, Minsk</MainTitle>
             <FlexWrapper gap={'10px'}>
               <Button>Send Message</Button>
-              <Button variant={'outline'}>Download CV</Button>
+              <Button variant={'outlined'}>Download CV</Button>
             </FlexWrapper>
           </FlexWrapper>
         </FlexWrapper>

@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { theme } from 'styles/theme'
 
 type Props = {
-  variant?: 'primary' | 'outline'
+  variant?: 'primary' | 'outlined'
 }
 
 export const Button = styled.button<Props>`
@@ -14,7 +14,7 @@ export const Button = styled.button<Props>`
   font-weight: 700;
 
   ${(props) =>
-    props.variant === 'outline' &&
+    props.variant === 'outlined' &&
     css<Props>`
       background-color: transparent;
       color: ${theme.colors.accent};

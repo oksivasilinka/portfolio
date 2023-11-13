@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { FlexWrapper } from 'components/flex-wrapper'
-import { Button } from 'components/button/button'
 import { SectionTitle } from 'components/section-title/section-title'
 import { SectionText } from 'components/section-text/section-text'
 import { Icon } from 'components/icon/icon'

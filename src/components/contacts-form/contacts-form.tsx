@@ -10,7 +10,7 @@ export const ContactsForm = () => {
         <Field placeholder={'Your name'} />
         <Field placeholder={'Your name'} as={'textarea'} />
       </FieldsWrapper>
-      <Button type={'submit'} variant={'outline'}>
+      <Button type={'submit'} variant={'outlined'}>
         Send message
       </Button>
     </StyledForm>
