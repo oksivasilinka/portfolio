@@ -12,8 +12,8 @@ export const Main = () => {
           <Name>Oksana Kovalchuk</Name>
           <MainTitle>Frontend Developer, Minsk</MainTitle>
           <FlexWrapper gap={'20px'}>
-            <Button title={'Send Message'} />
-            <Button title={'Download CV'} />
+            <Button>Send Message</Button>
+            <Button>Download CV</Button>
           </FlexWrapper>
         </FlexWrapper>
       </FlexWrapper>
