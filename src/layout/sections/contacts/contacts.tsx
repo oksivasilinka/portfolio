@@ -4,6 +4,8 @@ import { Button } from 'components/button/button'
 import { SectionTitle } from 'components/section-title/section-title'
 import { SectionText } from 'components/section-text/section-text'
 import { Icon } from 'components/icon/icon'
+import { Container } from 'components/container/container'
+import { ContactsForm } from 'components/contacts-form/contacts-form'
 
 const icons = [
   { url: '#', idIcon: 'react', id: '1' },
@@ -14,49 +16,37 @@ const icons = [
 export const Contacts = () => {
   return (
     <StyledContacts>
-      <SectionTitle>Contacts</SectionTitle>
-      <FlexWrapper justify={'space-between'} gap={'150px'}>
-        <StyledForm>
-          <Field placeholder={'Your name'} />
-          <Field placeholder={'Your name'} />
-          <Field placeholder={'Your name'} as={'textarea'} />
-          <Button type={'submit'}>Send message</Button>
-        </StyledForm>
-        <FlexWrapper direction={'column'} justify={'center'} gap={'50px'}>
-          <SectionText>
-            Send me a message, I will contact you shortly. Or contact me in a way more convenient for you
-          </SectionText>
-          <SocialIconsList>
-            {icons.map((icon) => (
-              <SocialItem key={icon.id}>
-                <SocialIconLink>
-                  <Icon width={'40'} height={'40'} id={icon.idIcon} />
-                </SocialIconLink>
-              </SocialItem>
-            ))}
-          </SocialIconsList>
-        </FlexWrapper>
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>Contacts</SectionTitle>
+        <ContactsWrapper>
+          <ContactsForm />
+          <FlexWrapper direction={'column'} justify={'center'} gap={'50px'}>
+            <SectionText>
+              Send me a message, I will contact you shortly. Or contact me in a way more convenient for you
+            </SectionText>
+            <SocialIconsList>
+              {icons.map((icon) => (
+                <SocialItem key={icon.id}>
+                  <SocialIconLink>
+                    <Icon width={'40'} height={'40'} id={icon.idIcon} />
+                  </SocialIconLink>
+                </SocialItem>
+              ))}
+            </SocialIconsList>
+          </FlexWrapper>
+        </ContactsWrapper>
+      </Container>
     </StyledContacts>
   )
 }
 
 const StyledContacts = styled.section`
-  background-color: powderblue;
   min-height: 50vh;
-  padding: 0 20%;
+
+  span {
+    padding: 0;
+  }
 `
-
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  gap: 30px;
-
-  width: 100%;
-`
-
-const Field = styled.input``
 
 const SocialIconsList = styled.ul`
   display: flex;
@@ -66,3 +56,10 @@ const SocialIconsList = styled.ul`
 const SocialItem = styled.li``
 
 const SocialIconLink = styled.a``
+
+const ContactsWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 50px 0;
+`
