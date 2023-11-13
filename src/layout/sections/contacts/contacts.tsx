@@ -5,6 +5,12 @@ import { SectionTitle } from 'components/section-title/section-title'
 import { SectionText } from 'components/section-text/section-text'
 import { Icon } from 'components/icon/icon'
 
+const icons = [
+  { url: '#', idIcon: 'react', id: '1' },
+  { url: '#', idIcon: 'react', id: '2' },
+  { url: '#', idIcon: 'react', id: '3' },
+]
+
 export const Contacts = () => {
   return (
     <StyledContacts>
@@ -20,18 +26,22 @@ export const Contacts = () => {
           <SectionText>
             Send me a message, I will contact you shortly. Or contact me in a way more convenient for you
           </SectionText>
-          <FlexWrapper justify={'center'} gap={'30px'}>
-            <Icon id={'react'} />
-            <Icon id={'react'} />
-            <Icon id={'react'} />
-          </FlexWrapper>
+          <SocialIconsList>
+            {icons.map((icon) => (
+              <SocialItem key={icon.id}>
+                <SocialIconLink>
+                  <Icon width={'40'} height={'40'} id={icon.idIcon} />
+                </SocialIconLink>
+              </SocialItem>
+            ))}
+          </SocialIconsList>
         </FlexWrapper>
       </FlexWrapper>
     </StyledContacts>
   )
 }
 
-const StyledContacts = styled.div`
+const StyledContacts = styled.section`
   background-color: powderblue;
   min-height: 50vh;
   padding: 0 20%;
@@ -47,3 +57,12 @@ const StyledForm = styled.form`
 `
 
 const Field = styled.input``
+
+const SocialIconsList = styled.ul`
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+`
+const SocialItem = styled.li``
+
+const SocialIconLink = styled.a``

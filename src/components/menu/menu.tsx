@@ -1,24 +1,23 @@
 import styled from 'styled-components'
+import { theme } from 'styles/theme'
+
+const menuItems = [
+  { href: '#', title: 'Home' },
+  { href: '#', title: 'About Me' },
+  { href: '#', title: 'Skills' },
+  { href: '#', title: 'Portfolio' },
+  { href: '#', title: 'Contacts' },
+]
 
 export const Menu = () => {
   return (
     <StyledNav>
       <ul>
-        <li>
-          <a href={'#'}>Home</a>
-        </li>
-        <li>
-          <a href={'#'}>About Me</a>
-        </li>
-        <li>
-          <a href={'#'}>Skills</a>
-        </li>
-        <li>
-          <a href={'#'}>Portfolio</a>
-        </li>
-        <li>
-          <a href={'#'}>Contacts</a>
-        </li>
+        {menuItems.map((item) => (
+          <li key={item.title}>
+            <a href={item.href}>{item.title}</a>
+          </li>
+        ))}
       </ul>
     </StyledNav>
   )
@@ -30,13 +29,10 @@ export const StyledNav = styled.nav`
     display: flex;
     justify-content: space-around;
 
-    li {
-      list-style: none;
-
-      a {
-        text-decoration: none;
-        color: black;
-      }
+    a {
+      color: ${theme.colors.accent};
+      font-size: 18px;
+      font-weight: 700;
     }
   }
 `

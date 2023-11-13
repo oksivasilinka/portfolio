@@ -21,7 +21,7 @@ export const Main = () => {
   )
 }
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;

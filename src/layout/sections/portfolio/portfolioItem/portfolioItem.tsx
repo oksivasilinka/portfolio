@@ -2,18 +2,21 @@ import styled from 'styled-components'
 import { FlexWrapper } from 'components/flex-wrapper'
 import photo from 'assets/mac.jpg'
 
-export const PortfolioItem = () => {
+type Props = {
+  name: string
+  description: string
+  url: string
+}
+
+export const PortfolioItem = ({ name, description, url }: Props) => {
   return (
     <StyledPortfolioItem>
       <FlexWrapper direction={'column'}>
         <Photo src={photo} alt={'photo'} />
         <Wrapper>
-          <StyledTitle>Tasks Manager</StyledTitle>
-          <StyledDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </StyledDescription>
-          <a href={'#'}>See project</a>
+          <StyledTitle>{name}</StyledTitle>
+          <StyledDescription>{description}</StyledDescription>
+          <a href={url}>See project</a>
         </Wrapper>
       </FlexWrapper>
     </StyledPortfolioItem>
