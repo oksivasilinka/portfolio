@@ -20,8 +20,11 @@ export const Skill = ({ title, idIcon }: Props) => {
 
 const StyledSkill = styled.div`
   background-color: cornflowerblue;
-  margin: 50px;
   width: 100px;
 `
 
-const StyledSkillTitle = styled.h3``
+const StyledSkillTitle = styled.h3`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+`

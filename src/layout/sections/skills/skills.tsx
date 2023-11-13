@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { SectionTitle } from 'components/section-title/section-title'
 import { FlexWrapper } from 'components/flex-wrapper'
 import { Skill } from 'layout/sections/skills/skill/skill'
+import { Container } from 'components/container/container'
 
 const skills = [
   { id: 1, idIcon: 'react', title: 'React' },
@@ -21,18 +22,24 @@ const skills = [
 export const Skills = () => {
   return (
     <StyledSkills>
-      <SectionTitle>Skills</SectionTitle>
-      <FlexWrapper justify={'center'} gap={'50px'} wrap={'wrap'}>
-        {skills.map((skill) => (
-          <Skill key={skill.id} title={skill.title} idIcon={skill.idIcon} />
-        ))}
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>Skills</SectionTitle>
+        <SkillsWrapper>
+          <FlexWrapper justify={'center'} gap={'50px'} wrap={'wrap'}>
+            {skills.map((skill) => (
+              <Skill key={skill.id} title={skill.title} idIcon={skill.idIcon} />
+            ))}
+          </FlexWrapper>
+        </SkillsWrapper>
+      </Container>
     </StyledSkills>
   )
 }
 
 const StyledSkills = styled.section`
-  background-color: darkseagreen;
   min-height: 50vh;
-  padding: 0 15%;
+`
+
+const SkillsWrapper = styled.div`
+  padding: 50px 0;
 `
