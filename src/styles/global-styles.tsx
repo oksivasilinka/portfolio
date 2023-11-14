@@ -11,11 +11,13 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: ${theme.colors.font};
+    cursor: default;
   }
 
   a {
     text-decoration: none;
     color: ${theme.colors.font};
+    cursor: pointer;
   }
 
   ul {
@@ -28,6 +30,10 @@ export const GlobalStyles = createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+  
+  input {
+    cursor: auto;
   }
 
   section:nth-last-of-type(odd) {

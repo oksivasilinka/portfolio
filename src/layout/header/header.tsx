@@ -15,4 +15,5 @@ export const Header = () => {
 
 export const StyledHeader = styled.header`
   background-color: ${theme.colors.primaryBg};
+  border-bottom: 1px solid ${theme.colors.secondary};
 `

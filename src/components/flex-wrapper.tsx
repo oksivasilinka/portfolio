@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 type Props = {
-  direction?: string
-  justify?: string
+  direction?: 'column' | 'row'
+  justify?: 'center' | 'space-between' | 'start' | 'end'
   align?: string
   wrap?: string
   gap?: string

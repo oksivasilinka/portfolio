@@ -1,4 +1,4 @@
-import photo from 'assets/SAVE_20200927_223544.webp'
+import photo from 'assets/IMG_20200426_163541_1-EDIT.jpg'
 import styled from 'styled-components'
 import { FlexWrapper } from 'components/flex-wrapper'
 import { Button } from 'components/button/button'

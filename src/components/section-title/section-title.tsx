@@ -10,4 +10,5 @@ export const SectionTitle = styled.h2`
   letter-spacing: 6.8px;
   color: ${theme.colors.accent};
   border-bottom: 1px solid ${theme.colors.secondary};
+  margin-bottom: 50px;
 `

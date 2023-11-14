@@ -11,15 +11,14 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus fugiat illum itaque labore minus\n' +
       '        sapiente totam voluptates. Accusamus accusantium aut consectetur dolores eligendi id ipsam perferendis quae\n' +
-      '        rerum voluptates.',
+      '        rerum voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
   },
   {
     name: 'Social Network',
     url: '#',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus fugiat illum itaque labore minus\n' +
-      '        sapiente totam voluptates. Accusamus accusantium aut consectetur dolores eligendi id ipsam perferendis quae\n' +
-      '        rerum voluptates.',
+      '        sapiente totam voluptates. ',
   },
   {
     name: 'Online Store',
@@ -27,7 +26,7 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus fugiat illum itaque labore minus\n' +
       '        sapiente totam voluptates. Accusamus accusantium aut consectetur dolores eligendi id ipsam perferendis quae\n' +
-      '        rerum voluptates.',
+      '        rerum voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
   },
   {
     name: 'Cards',
@@ -44,18 +43,12 @@ export const Portfolio = () => {
     <StyledPortfolio>
       <Container>
         <SectionTitle>Portfolio</SectionTitle>
-        <PortfolioWrapper>
-          <FlexWrapper gap={'35px 45px'} wrap={'wrap'} justify={'center'}>
-            {projects.map((project) => (
-              <PortfolioItem
-                name={project.name}
-                key={project.name}
-                description={project.description}
-                url={project.url}
-              />
-            ))}
-          </FlexWrapper>
-        </PortfolioWrapper>
+
+        <FlexWrapper gap={'35px 45px'} wrap={'wrap'} justify={'center'}>
+          {projects.map((project) => (
+            <PortfolioItem name={project.name} key={project.name} description={project.description} url={project.url} />
+          ))}
+        </FlexWrapper>
       </Container>
     </StyledPortfolio>
   )
@@ -63,7 +56,4 @@ export const Portfolio = () => {
 
 const StyledPortfolio = styled.section`
   min-height: 100vh;
-`
-const PortfolioWrapper = styled.div`
-  padding: 50px 0;
 `

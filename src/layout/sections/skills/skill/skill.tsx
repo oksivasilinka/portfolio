@@ -1,6 +1,7 @@
 import { FlexWrapper } from 'components/flex-wrapper'
 import styled from 'styled-components'
 import { Icon } from 'components/icon/icon'
+import { theme } from 'styles/theme'
 
 type Props = {
   title: string
@@ -11,7 +12,9 @@ export const Skill = ({ title, idIcon }: Props) => {
   return (
     <StyledSkill>
       <FlexWrapper direction={'column'} gap={'30px'} align={'center'}>
-        <Icon id={idIcon} />
+        <IconWrapper>
+          <Icon id={idIcon} />
+        </IconWrapper>
         <StyledSkillTitle>{title}</StyledSkillTitle>
       </FlexWrapper>
     </StyledSkill>
@@ -19,7 +22,6 @@ export const Skill = ({ title, idIcon }: Props) => {
 }
 
 const StyledSkill = styled.div`
-  background-color: cornflowerblue;
   width: 100px;
 `
 
@@ -27,4 +29,19 @@ const StyledSkillTitle = styled.h3`
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+`
+
+const IconWrapper = styled.div`
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: -15px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    box-shadow: ${theme.shadow.main};
+  }
 `

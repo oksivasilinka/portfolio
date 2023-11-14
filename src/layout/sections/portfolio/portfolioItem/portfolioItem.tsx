@@ -12,14 +12,12 @@ type Props = {
 export const PortfolioItem = ({ name, description, url }: Props) => {
   return (
     <StyledPortfolioItem>
-      <FlexWrapper direction={'column'}>
-        <Photo src={photo} alt={'photo'} />
-        <Wrapper>
-          <StyledTitle>{name}</StyledTitle>
-          <StyledDescription>{description}</StyledDescription>
-          <StyledLink href={url}>See project</StyledLink>
-        </Wrapper>
-      </FlexWrapper>
+      <Photo src={photo} alt={'photo'} />
+      <Wrapper>
+        <StyledTitle>{name}</StyledTitle>
+        <StyledDescription>{description}</StyledDescription>
+        <StyledLink href={url}>See project</StyledLink>
+      </Wrapper>
     </StyledPortfolioItem>
   )
 }
@@ -28,15 +26,16 @@ const StyledPortfolioItem = styled.div`
   background-color: ${theme.colors.primaryBg};
   border-radius: 24px;
   max-width: 410px;
-  box-shadow:
-    -1px -2px 2.6px 0px rgba(189, 6, 94, 0.31),
-    1px 4px 4px 0px rgba(158, 255, 0, 0.21);
+  box-shadow: ${theme.shadow.main};
 `
 const Wrapper = styled.div`
   padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 `
 
-const StyledTitle = styled.h4`
+const StyledTitle = styled.h3`
   font-size: 30px;
   font-weight: 700;
   color: ${theme.colors.accent};
@@ -44,7 +43,6 @@ const StyledTitle = styled.h4`
 `
 
 const StyledDescription = styled.p`
-  margin: 20px 0;
   font-size: 16px;
   font-weight: 500;
 `
@@ -52,7 +50,7 @@ const StyledDescription = styled.p`
 const Photo = styled.img`
   border-radius: 24px;
   padding: 10px;
-  width: 410px;
+  width: 100%;
   object-fit: cover;
 `
 

@@ -21,7 +21,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 50%;
+  width: 40%;
   gap: 60px;
 `
 
@@ -38,5 +38,6 @@ const Field = styled.input`
   width: 100%;
   &::placeholder {
     color: ${theme.colors.font};
+    opacity: 0.6;
   }
 `
