@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 type Props = {
-  direction?: 'column' | 'row'
-  justify?: 'center' | 'space-between' | 'start' | 'end'
-  align?: string
-  wrap?: string
+  direction?: 'column' | 'row' | 'column-reverse' | 'row-reverse'
+  justify?: 'center' | 'space-between' | 'start' | 'end' | 'space-around'
+  align?: 'stretch' | 'center' | 'start' | 'end'
+  wrap?: 'nowrap' | 'wrap' | 'wrap-reverse'
   gap?: string
 }
 export const FlexWrapper = styled.div<Props>`

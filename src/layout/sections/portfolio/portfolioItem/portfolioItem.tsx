@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { FlexWrapper } from 'components/flex-wrapper'
 import photo from 'assets/mac.jpg'
 import { theme } from 'styles/theme'
 
