@@ -22,26 +22,22 @@ export const Skill = ({ title, idIcon }: Props) => {
 }
 
 const StyledSkill = styled.div`
-  width: 100px;
+  padding: 20px;
 `
 
 const StyledSkillTitle = styled.h3`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  text-align: center;
 `
 
 const IconWrapper = styled.div`
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    top: -18px;
-    left: -15px;
-    display: block;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    box-shadow: ${theme.shadow.main};
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  box-shadow: ${theme.shadow.main};
 `

@@ -11,8 +11,8 @@ export const Icon = ({ id, viewBox, width, height }: Props) => {
   return (
     <svg
       width={width || '50'}
-      height={height || '45'}
-      viewBox={viewBox || '0 0 50 45'}
+      height={height || '50'}
+      viewBox={viewBox || '0 0 50 50'}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

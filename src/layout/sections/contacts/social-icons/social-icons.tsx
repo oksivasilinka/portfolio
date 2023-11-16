@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 type Icons = {
   url: string
-  idIcon: string
   id: string
 }
 
@@ -17,7 +16,7 @@ export const SocialIcons = ({ icons }: Props) => {
       {icons.map((icon) => (
         <SocialItem key={icon.id}>
           <SocialIconLink>
-            <Icon width={'40'} height={'40'} id={icon.idIcon} />
+            <Icon width={'50'} height={'50'} viewBox={'0 0 50 50'} id={icon.id} />
           </SocialIconLink>
         </SocialItem>
       ))}
@@ -33,4 +32,4 @@ const SocialIconsList = styled.ul`
 `
 const SocialItem = styled.li``
 
-const SocialIconLink = styled.a``
+const SocialIconLink = styled.button``

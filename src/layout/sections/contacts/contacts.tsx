@@ -7,9 +7,10 @@ import { ContactsForm } from 'components/contacts-form/contacts-form'
 import { SocialIcons } from 'layout/sections/contacts/social-icons/social-icons'
 
 const icons = [
-  { url: '#', idIcon: 'react', id: '1' },
-  { url: '#', idIcon: 'react', id: '2' },
-  { url: '#', idIcon: 'react', id: '3' },
+  { url: '#', id: 'linkedin' },
+  { url: '#', id: 'telegram' },
+  { url: '#', id: 'email' },
+  { url: '#', id: 'github' },
 ]
 
 export const Contacts = () => {
