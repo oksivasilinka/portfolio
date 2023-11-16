@@ -12,27 +12,33 @@ const menuItems = [
 export const Menu = () => {
   return (
     <StyledNav>
-      <ul>
+      <NavList>
         {menuItems.map((item) => (
-          <li key={item.title}>
-            <a href={item.href}>{item.title}</a>
-          </li>
+          <ListItem key={item.title}>
+            <Link href={item.href}>{item.title}</Link>
+          </ListItem>
         ))}
-      </ul>
+      </NavList>
     </StyledNav>
   )
 }
 
-export const StyledNav = styled.nav`
-  ul {
-    padding: 40px 0;
-    display: flex;
-    justify-content: space-around;
+export const StyledNav = styled.nav``
 
-    a {
-      color: ${theme.colors.accent};
-      font-size: 18px;
-      font-weight: 700;
-    }
+export const NavList = styled.ul`
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+`
+
+export const ListItem = styled.li``
+
+export const Link = styled.a`
+  color: ${theme.colors.accent};
+  font-size: 18px;
+  font-weight: 500;
+
+  &:hover {
+    color: ${theme.colors.secondary};
   }
 `

@@ -11,7 +11,7 @@ type Props = {
 export const Skill = ({ title, idIcon }: Props) => {
   return (
     <StyledSkill>
-      <FlexWrapper direction={'column'} gap={'30px'} align={'center'}>
+      <FlexWrapper direction={'column'} gap={'25px'} align={'center'}>
         <IconWrapper>
           <Icon id={idIcon} />
         </IconWrapper>
@@ -21,9 +21,7 @@ export const Skill = ({ title, idIcon }: Props) => {
   )
 }
 
-const StyledSkill = styled.div`
-  padding: 20px;
-`
+const StyledSkill = styled.div``
 
 const StyledSkillTitle = styled.h3`
   font-size: 14px;

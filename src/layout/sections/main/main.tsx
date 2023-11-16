@@ -10,21 +10,23 @@ export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper gap={'70px'}>
+        <FlexWrapper justify={'space-between'} align={'center'} gap={'50px'}>
           <Photo src={photo} alt={'main-photo'} />
-          <FlexWrapper direction={'column'} gap={'50px'} justify={'center'}>
+
+          <FlexWrapper direction={'column'} justify={'center'}>
             <Name>Oksana Kovalchuk</Name>
             <MainTitle>Frontend Developer</MainTitle>
-            <FlexWrapper gap={'30px'}>
+
+            <ButtonWrapper>
               <Button>
-                <Icon id={'send'} width={'20'} height={'14'} viewBox={'0 0 14 20'} />
+                <Icon id={'send'} height={'20'} width={'25'} viewBox={'0 0 20 20'} />
                 Send Message
               </Button>
               <Button variant={'outlined'}>
                 <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
                 Download CV
               </Button>
-            </FlexWrapper>
+            </ButtonWrapper>
           </FlexWrapper>
         </FlexWrapper>
       </Container>
@@ -34,14 +36,14 @@ export const Main = () => {
 
 const StyledMain = styled.section`
   height: 100vh;
-  padding-top: 250px;
+  display: flex;
 `
 
 const Photo = styled.img`
   width: 500px;
   object-fit: cover;
   border-radius: 24px;
-  box-shadow: ${theme.shadow.main};
+  box-shadow: ${theme.shadow.second};
 `
 
 const Name = styled.h2`
@@ -51,6 +53,14 @@ const Name = styled.h2`
 `
 
 const MainTitle = styled.h1`
+  padding-top: 30px;
   font-size: 50px;
   font-weight: 700;
+`
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  gap: 50px;
+  padding-top: 100px;
+  flex-wrap: wrap;
 `
