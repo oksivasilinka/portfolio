@@ -12,9 +12,6 @@ export const Header = () => {
     </StyledHeader>
   )
 }
-type Props = {
-  scrollPosition: number
-}
 
 export const StyledHeader = styled.header`
   position: fixed;
