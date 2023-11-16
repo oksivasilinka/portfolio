@@ -24,8 +24,9 @@ export const PortfolioItem = ({ name, description, url }: Props) => {
 const StyledPortfolioItem = styled.div`
   background-color: ${theme.colors.primaryBg};
   border-radius: 24px;
-  max-width: 410px;
+  max-width: 500px;
   box-shadow: ${theme.shadow.main};
+  margin-bottom: 50px;
 `
 const Wrapper = styled.div`
   padding: 20px;

@@ -12,8 +12,13 @@ export const Header = () => {
     </StyledHeader>
   )
 }
+type Props = {
+  scrollPosition: number
+}
 
 export const StyledHeader = styled.header`
+  position: fixed;
+  width: 100%;
   background-color: ${theme.colors.primaryBg};
   border-bottom: 1px solid ${theme.colors.secondary};
 `

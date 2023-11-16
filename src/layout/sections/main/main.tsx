@@ -4,19 +4,26 @@ import { FlexWrapper } from 'components/flex-wrapper'
 import { Button } from 'components/button/button'
 import { theme } from 'styles/theme'
 import { Container } from 'components/container/container'
+import { Icon } from 'components/icon/icon'
 
 export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper justify={'center'} gap={'50px'} align={'center'}>
+        <FlexWrapper gap={'70px'}>
           <Photo src={photo} alt={'main-photo'} />
-          <FlexWrapper direction={'column'} gap={'30px'}>
+          <FlexWrapper direction={'column'} gap={'50px'} justify={'center'}>
             <Name>Oksana Kovalchuk</Name>
-            <MainTitle>Frontend Developer, Minsk</MainTitle>
-            <FlexWrapper gap={'10px'}>
-              <Button>Send Message</Button>
-              <Button variant={'outlined'}>Download CV</Button>
+            <MainTitle>Frontend Developer</MainTitle>
+            <FlexWrapper gap={'30px'}>
+              <Button>
+                <Icon id={'send'} width={'20'} height={'14'} viewBox={'0 0 14 20'} />
+                Send Message
+              </Button>
+              <Button variant={'outlined'}>
+                <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
+                Download CV
+              </Button>
             </FlexWrapper>
           </FlexWrapper>
         </FlexWrapper>
@@ -26,26 +33,24 @@ export const Main = () => {
 }
 
 const StyledMain = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  padding: 150px;
+  padding-top: 250px;
 `
 
 const Photo = styled.img`
   width: 500px;
   object-fit: cover;
   border-radius: 24px;
+  box-shadow: ${theme.shadow.main};
 `
 
 const Name = styled.h2`
   color: ${theme.colors.accent};
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 800;
 `
 
 const MainTitle = styled.h1`
-  font-size: 20px;
+  font-size: 50px;
   font-weight: 700;
 `
