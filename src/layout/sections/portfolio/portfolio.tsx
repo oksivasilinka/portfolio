@@ -24,7 +24,7 @@ const projects = [
     name: 'Online Store',
     url: '#',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus fugiat illum itaque labore minus\n' +
+      'Lorem ipsum dolor sit amet, consectLorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Accusantium delectus fugiat illum itaque labore minus\n' +
       '        sapiente totam voluptates. Accusamus accusantium aut consectetur dolores eligendi id ipsam perferendis quae\n' +
       '        rerum voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
   },
@@ -44,7 +44,7 @@ export const Portfolio = () => {
       <Container>
         <SectionTitle>Portfolio</SectionTitle>
 
-        <FlexWrapper wrap={'wrap'} justify={'space-around'}>
+        <FlexWrapper wrap={'wrap'} justify={'space-between'} align={'stretch'}>
           {projects.map((project) => (
             <PortfolioItem name={project.name} key={project.name} description={project.description} url={project.url} />
           ))}

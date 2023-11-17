@@ -20,9 +20,11 @@ export const ContactsForm = () => {
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
+  max-width: 540px;
   width: 40%;
-  gap: 60px;
+  gap: 40px;
+  padding-bottom: 50px;
 `
 
 const FieldsWrapper = styled.div`
@@ -36,6 +38,9 @@ const FieldsWrapper = styled.div`
 const Field = styled.input`
   border-bottom: 1px solid ${theme.colors.secondary};
   width: 100%;
+  min-height: 20px;
+  padding: 5px;
+  vertical-align: bottom;
   &::placeholder {
     color: ${theme.colors.font};
     opacity: 0.6;

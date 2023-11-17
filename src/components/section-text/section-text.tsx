@@ -4,6 +4,6 @@ export const SectionText = styled.p`
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
 `

@@ -18,4 +18,5 @@ export const StyledHeader = styled.header`
   width: 100%;
   background-color: ${theme.colors.primaryBg};
   border-bottom: 1px solid ${theme.colors.secondary};
+  z-index: 9999;
 `
