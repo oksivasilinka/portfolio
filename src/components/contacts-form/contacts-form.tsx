@@ -1,14 +1,14 @@
 import { Button } from 'components/button/button'
 import styled from 'styled-components'
-import { theme } from 'styles/theme'
+import { Field } from 'components/field/field'
 
 export const ContactsForm = () => {
   return (
     <StyledForm>
       <FieldsWrapper>
-        <Field placeholder={'Your name'} />
-        <Field placeholder={'Your name'} />
-        <Field placeholder={'Your name'} as={'textarea'} />
+        <Field label={'Your Name'} />
+        <Field label={'Your Email'} />
+        <Field label={'Your Message'} />
       </FieldsWrapper>
       <Button type={'submit'} variant={'outlined'}>
         Send message
@@ -32,17 +32,5 @@ const FieldsWrapper = styled.div`
   flex-direction: column;
   align-items: start;
   width: 100%;
-  gap: 30px;
-`
-
-const Field = styled.input`
-  border-bottom: 1px solid ${theme.colors.secondary};
-  width: 100%;
-  min-height: 20px;
-  padding: 5px;
-  vertical-align: bottom;
-  &::placeholder {
-    color: ${theme.colors.font};
-    opacity: 0.6;
-  }
+  gap: 40px;
 `

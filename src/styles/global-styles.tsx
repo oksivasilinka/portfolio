@@ -30,9 +30,12 @@ export const GlobalStyles = createGlobalStyle`
 
   button, input, textarea {
     all: unset;
+    &:focus-visible {
+      outline: 1px solid ${theme.colors.font};
+    }
   }
 
-  button {
+  button, input {
     cursor: pointer;
   }
   
