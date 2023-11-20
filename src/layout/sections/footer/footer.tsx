@@ -11,12 +11,11 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   background-color: ${theme.colors.secondaryBg};
-  min-height: 115px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 40px 0;
 `
 
 const StyledText = styled.p`
   font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
 `

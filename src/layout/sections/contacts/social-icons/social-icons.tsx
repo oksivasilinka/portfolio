@@ -1,5 +1,6 @@
 import { Icon } from 'components/icon/icon'
 import styled from 'styled-components'
+import { theme } from 'styles/theme'
 
 type Icons = {
   url: string
@@ -29,6 +30,14 @@ const SocialIconsList = styled.ul`
   width: 100%;
   justify-content: space-evenly;
 `
-const SocialItem = styled.li``
+const SocialItem = styled.li`
+  &:hover {
+    transform: scale(1.2);
+  }
+`
 
-const SocialIconLink = styled.button``
+const SocialIconLink = styled.a`
+  &:hover {
+    color: ${theme.colors.accent};
+  }
+`

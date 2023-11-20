@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${theme.colors.font};
     cursor: default;
     line-height: 1.2;
+    min-width: 360px;
     &:focus-visible {
       outline: 1px solid ${theme.colors.font};
     }
