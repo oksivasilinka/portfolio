@@ -16,7 +16,7 @@ export const SocialIcons = ({ icons }: Props) => {
       {icons.map((icon) => (
         <SocialItem key={icon.id}>
           <SocialIconLink>
-            <Icon width={'50'} height={'50'} viewBox={'0 0 50 50'} id={icon.id} />
+            <Icon width={'30'} height={'30'} viewBox={'0 0 30 30'} id={icon.id} />
           </SocialIconLink>
         </SocialItem>
       ))}
@@ -26,9 +26,8 @@ export const SocialIcons = ({ icons }: Props) => {
 
 const SocialIconsList = styled.ul`
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
+  width: 100%;
+  justify-content: space-evenly;
 `
 const SocialItem = styled.li``
 

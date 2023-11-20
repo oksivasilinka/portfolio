@@ -6,6 +6,7 @@ import { Portfolio } from 'layout/sections/portfolio/portfolio'
 import { Contacts } from 'layout/sections/contacts/contacts'
 import { ThemeProvider } from 'styled-components'
 import { theme } from 'styles/theme'
+import { Footer } from 'layout/sections/footer/footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Skills />
       <Portfolio />
       <Contacts />
+      <Footer />
     </ThemeProvider>
   )
 }

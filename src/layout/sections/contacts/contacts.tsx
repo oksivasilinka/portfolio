@@ -18,16 +18,16 @@ export const Contacts = () => {
     <StyledContacts>
       <Container>
         <SectionTitle>Contacts</SectionTitle>
-        <FlexWrapper gap={'100px'}>
+        <FlexWrapper gap={'100px'} justify={'space-around'}>
           <ContactsForm />
 
-          <FlexWrapper direction={'column'} justify={'center'}>
+          <ContactsWrapper>
             <SectionText>
               Send me a message, I will contact you shortly. Or contact me in a way more convenient for you
             </SectionText>
 
             <SocialIcons icons={icons} />
-          </FlexWrapper>
+          </ContactsWrapper>
         </FlexWrapper>
       </Container>
     </StyledContacts>
@@ -36,4 +36,13 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
   min-height: 50vh;
+`
+
+const ContactsWrapper = styled.div`
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
 `

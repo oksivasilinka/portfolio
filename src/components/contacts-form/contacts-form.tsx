@@ -10,7 +10,7 @@ export const ContactsForm = () => {
         <Field label={'Your Email'} />
         <Field label={'Your Message'} />
       </FieldsWrapper>
-      <Button type={'submit'} variant={'outlined'}>
+      <Button type={'submit'} variant={'outlined'} size={'small'}>
         Send message
       </Button>
     </StyledForm>
@@ -20,7 +20,7 @@ export const ContactsForm = () => {
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   max-width: 540px;
   width: 40%;
   gap: 40px;
