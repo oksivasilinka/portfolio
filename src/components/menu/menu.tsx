@@ -23,7 +23,11 @@ export const Menu = () => {
   )
 }
 
-export const StyledNav = styled.nav``
+export const StyledNav = styled.nav`
+  @media ${theme.media.mobile} {
+    display: none;
+  }
+`
 
 export const NavList = styled.ul`
   padding: 40px 0;
