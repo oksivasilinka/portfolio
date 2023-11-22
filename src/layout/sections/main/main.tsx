@@ -44,13 +44,16 @@ const StyledMain = styled.section`
 
 const Photo = styled.img`
   width: 400px;
-  height: 500px;
+  max-height: 500px;
+  height: 100%;
   object-fit: cover;
   border-radius: 24px;
   box-shadow: ${theme.shadow.main};
   @media ${theme.media.desktopSmall} {
     width: 300px;
-    height: 370px;
+
+    max-height: 370px;
+    height: 100%;
   }
 
   @media ${theme.media.tablet} {
