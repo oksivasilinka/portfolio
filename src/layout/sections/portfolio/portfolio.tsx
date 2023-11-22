@@ -6,35 +6,28 @@ import { Container } from 'components/container/container'
 
 const projects = [
   {
-    name: 'Tasks Manager',
+    name: 'Learning Platform',
     url: '#',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus fugiat illum itaque labore minus\n' +
-      '        sapiente totam voluptates. Accusamus accusantium aut consectetur dolores eligendi id ipsam perferendis quae\n' +
-      '        rerum voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      'This application is designed for effective learning through flashcards that contain questions and answers. Users can create their own sets of flashcards or utilize pre-made decks. The application also allows adding images and videos to the flashcards to enhance information retention.',
   },
   {
-    name: 'Social Network',
+    name: 'Friend Connect',
     url: '#',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus fugiat illum itaque labore minus\n' +
-      '        sapiente totam voluptates. ',
+      'Friend Connect is a web application that serves as a social networking platform. It provides users with a platform to connect, interact, and share content with friends and acquaintances. With personalized profiles, messaging functionality, and news feeds, Friend Connect creates a vibrant online community where users can stay connected and engage with their social circles.',
   },
   {
-    name: 'Online Store',
+    name: 'Home Style Store',
     url: '#',
     description:
-      'Lorem ipsum dolor sit amet, consectLorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Accusantium delectus fugiat illum itaque labore minus\n' +
-      '        sapiente totam voluptates. Accusamus accusantium aut consectetur dolores eligendi id ipsam perferendis quae\n' +
-      '        rerum voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      'Home Style Store is an online furniture store application that offers a wide selection of modern furniture and home decor products. The application features an attractive and user-friendly interface, allowing customers to easily find and purchase the desired items.',
   },
   {
-    name: 'Cards',
+    name: 'Check Flow',
     url: '#',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus fugiat illum itaque labore minus\n' +
-      '        sapiente totam voluptates. Accusamus accusantium aut consectetur dolores eligendi id ipsam perferendis quae\n' +
-      '        rerum voluptates.',
+      'The "Check Flow" project provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. Users can easily add new tasks, set their completion status, modify deadlines, and priorities.',
   },
 ]
 
