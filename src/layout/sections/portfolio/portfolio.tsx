@@ -44,7 +44,7 @@ export const Portfolio = () => {
       <Container>
         <SectionTitle>Portfolio</SectionTitle>
 
-        <FlexWrapper wrap={'wrap'} justify={'space-between'} align={'stretch'}>
+        <FlexWrapper wrap={'wrap'} justify={'space-around'} align={'stretch'}>
           {projects.map((project) => (
             <PortfolioItem name={project.name} key={project.name} description={project.description} url={project.url} />
           ))}

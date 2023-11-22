@@ -18,7 +18,7 @@ export const Contacts = () => {
     <StyledContacts>
       <Container>
         <SectionTitle>Contacts</SectionTitle>
-        <FlexWrapper gap={'100px'} justify={'space-around'}>
+        <FlexWrapper gap={'100px'} justify={'space-around'} wrap={'wrap-reverse'}>
           <ContactsForm />
 
           <ContactsWrapper>
@@ -39,7 +39,8 @@ const StyledContacts = styled.section`
 `
 
 const ContactsWrapper = styled.div`
-  width: 40%;
+  max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

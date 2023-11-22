@@ -21,8 +21,8 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 540px;
-  width: 40%;
+  max-width: 500px;
+  width: 90%;
   gap: 40px;
   padding-bottom: 50px;
 `

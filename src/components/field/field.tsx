@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { theme } from 'styles/theme'
+import { font } from 'styles/common'
 
 type Props = {
   label: string
@@ -40,5 +41,7 @@ const FieldWrapper = styled.div`
     bottom: 5px;
     opacity: 0.6;
     transition: 0.3s;
+
+    ${font({ max: 16, min: 12 })};
   }
 `

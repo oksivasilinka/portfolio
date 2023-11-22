@@ -5,29 +5,32 @@ import { Button } from 'components/button/button'
 import { theme } from 'styles/theme'
 import { Container } from 'components/container/container'
 import { Icon } from 'components/icon/icon'
+import { font } from 'styles/common'
 
 export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper justify={'space-between'} align={'center'} gap={'50px'}>
+        <FlexWrapper justify={'center'} align={'center'} gap={'50px'} wrap={'wrap-reverse'}>
           <Photo src={photo} alt={'main-photo'} />
 
-          <FlexWrapper direction={'column'} justify={'center'}>
-            <Name>Oksana Kovalchuk</Name>
+          <Wrapper>
+            <Name>
+              Oksana <br />
+              Kovalchuk
+            </Name>
             <MainTitle>Frontend Developer</MainTitle>
-
             <ButtonWrapper>
-              <Button>
-                <Icon id={'send'} height={'20'} width={'25'} viewBox={'0 0 20 20'} />
-                Send Message
-              </Button>
+              {/*<Button>*/}
+              {/*  <Icon id={'send'} height={'20'} width={'25'} viewBox={'0 0 20 20'} />*/}
+              {/*  Send Message*/}
+              {/*</Button>*/}
               <Button variant={'outlined'}>
                 <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
                 Download CV
               </Button>
             </ButtonWrapper>
-          </FlexWrapper>
+          </Wrapper>
         </FlexWrapper>
       </Container>
     </StyledMain>
@@ -35,32 +38,46 @@ export const Main = () => {
 }
 
 const StyledMain = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 `
 
 const Photo = styled.img`
-  width: 500px;
+  width: 400px;
+  height: 500px;
   object-fit: cover;
   border-radius: 24px;
-  box-shadow: ${theme.shadow.second};
+  box-shadow: ${theme.shadow.main};
+  @media ${theme.media.desktopSmall} {
+    width: 300px;
+    height: 370px;
+  }
+
+  @media ${theme.media.tablet} {
+    //width: 280px;
+    //height: 320px;
+  }
 `
 
 const Name = styled.h2`
-  color: ${theme.colors.accent};
-  font-size: 60px;
-  font-weight: 800;
+  ${font({ color: theme.colors.accent, weight: 800, max: 50, min: 34 })};
 `
 
 const MainTitle = styled.h1`
+  ${font({ weight: 700, max: 40, min: 30 })};
   padding-top: 30px;
-  font-size: 50px;
-  font-weight: 700;
 `
 
 const ButtonWrapper = styled.div`
   display: flex;
-  gap: 50px;
-  padding-top: 100px;
+  gap: 30px;
+  padding-top: 50px;
   flex-wrap: wrap;
+  width: 100%;
+`
+
+const Wrapper = styled.div`
+  @media screen and (max-width: 814px) {
+    //padding-top: 150px;
+  }
 `

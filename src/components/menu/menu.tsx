@@ -24,7 +24,7 @@ export const Menu = () => {
 }
 
 export const StyledNav = styled.nav`
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     display: none;
   }
 `

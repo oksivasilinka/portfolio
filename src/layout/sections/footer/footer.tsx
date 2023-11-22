@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { theme } from 'styles/theme'
+import { font } from 'styles/common'
 
 export const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const StyledFooter = styled.footer`
 `
 
 const StyledText = styled.p`
-  font-size: 14px;
   text-align: center;
   opacity: 0.8;
+  ${font({ max: 14, min: 12 })};
 `

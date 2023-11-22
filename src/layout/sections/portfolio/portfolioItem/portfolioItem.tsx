@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import photo from 'assets/mac.jpg'
 import { theme } from 'styles/theme'
 import { Button } from 'components/button/button'
+import { font } from 'styles/common'
 
 type Props = {
   name: string
@@ -81,16 +82,12 @@ const Wrapper = styled.div`
 `
 
 const StyledTitle = styled.h3`
-  font-size: 30px;
-  font-weight: 700;
-  color: ${theme.colors.accent};
-  line-height: 26px;
+  ${font({ color: theme.colors.accent, weight: 700, max: 30, min: 20, lineHeight: 0.9 })};
 `
 
 const StyledDescription = styled.p`
-  font-size: 16px;
-  font-weight: 500;
   padding-top: 20px;
+  ${font({ weight: 500, max: 16, min: 14 })};
 `
 
 const Photo = styled.img`
@@ -100,11 +97,11 @@ const Photo = styled.img`
   object-fit: cover;
 `
 const StyledLink = styled.a`
-  color: ${theme.colors.accent};
   text-decoration: underline;
   position: absolute;
   bottom: 20px;
   left: 20px;
+  ${font({ color: theme.colors.accent, max: 16, min: 14 })};
 `
 
 const LinkButton = styled.a`

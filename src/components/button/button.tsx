@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { theme } from 'styles/theme'
+import { font } from 'styles/common'
 
 type Props = {
   variant?: 'primary' | 'outlined'
@@ -8,14 +9,12 @@ type Props = {
 
 export const Button = styled.button<Props>`
   background-color: ${theme.colors.accent};
-  color: ${theme.colors.primaryBg};
-  padding: 14px 30px;
+  padding: 12px 24px;
   border-radius: 10px;
-  font-size: 18px;
-  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 12px;
+  ${font({ color: theme.colors.primaryBg, weight: 700, max: 18, min: 14 })};
   a {
     color: ${theme.colors.primaryBg};
   }

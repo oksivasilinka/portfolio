@@ -38,8 +38,9 @@ export const MobileMenu = () => {
 }
 
 export const StyledMobileNav = styled.nav`
+  position: relative;
   display: none;
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     display: block;
   }
 `
@@ -82,11 +83,11 @@ export const Link = styled.a`
 `
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
-  position: fixed;
-  width: 200px;
-  height: 200px;
-  top: -100px;
-  right: -100px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -10px;
+  right: -20px;
   z-index: 99999;
 
   span {
