@@ -1,16 +1,16 @@
 import styled from 'styled-components'
-import photo from 'assets/mac.jpg'
 import { theme } from 'styles/theme'
 import { Button } from 'components/button/button'
 import { font } from 'styles/common'
 
 type Props = {
   name: string
+  photo: string
   description: string
   url: string
 }
 
-export const PortfolioItem = ({ name, description, url }: Props) => {
+export const PortfolioItem = ({ name, description, url, photo }: Props) => {
   return (
     <StyledPortfolioItem>
       <ImageWrapper>
@@ -82,7 +82,7 @@ const Wrapper = styled.div`
 `
 
 const StyledTitle = styled.h3`
-  ${font({ color: theme.colors.accent, weight: 700, max: 30, min: 20, lineHeight: 0.9 })};
+  ${font({ color: theme.colors.accent, weight: 700, max: 26, min: 20, lineHeight: 0.9 })};
 `
 
 const StyledDescription = styled.p`
@@ -95,6 +95,7 @@ const Photo = styled.img`
   padding: 10px;
   width: 100%;
   object-fit: cover;
+  height: 300px;
 `
 const StyledLink = styled.a`
   text-decoration: underline;

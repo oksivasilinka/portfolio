@@ -3,7 +3,6 @@ export const theme = {
     primaryBg: '#0C070A',
     secondaryBg: '#131012',
     accent: '#9EFF00',
-    secondary: '#BD065E',
     font: '#FFFFFF',
   },
   shadow: {
@@ -11,7 +10,6 @@ export const theme = {
     second: '-8px -10px 20px 3px rgba(255, 255,255, 0.31), 5px 5px 10px 1px rgba(158, 255, 0, 0.21)',
   },
   media: {
-    desktopSmall: 'screen and (max-width: 992px)',
     tablet: 'screen and (max-width: 768px)',
     mobile: 'screen and (max-width: 576px)',
   },

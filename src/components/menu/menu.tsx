@@ -33,6 +33,9 @@ export const NavList = styled.ul`
   padding: 40px 0;
   display: flex;
   justify-content: space-around;
+  @media screen and (orientation: landscape) and (max-width: 1100px) {
+    padding: 20px 0;
+  }
 `
 
 export const ListItem = styled.li``
@@ -43,6 +46,6 @@ export const Link = styled.a`
   font-weight: 500;
 
   &:hover {
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.font};
   }
 `

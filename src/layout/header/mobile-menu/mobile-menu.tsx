@@ -38,8 +38,11 @@ export const MobileMenu = () => {
 }
 
 export const StyledMobileNav = styled.nav`
+  width: 100%;
+  height: 70px;
   position: relative;
   display: none;
+
   @media ${theme.media.tablet} {
     display: block;
   }
@@ -78,16 +81,16 @@ export const Link = styled.a`
   font-weight: 500;
 
   &:hover {
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.font};
   }
 `
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   top: -10px;
-  right: -20px;
+  right: -10px;
   z-index: 99999;
 
   span {
@@ -95,8 +98,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     width: 40px;
     height: 2px;
     background-color: ${theme.colors.accent};
-    left: 40px;
-    bottom: 50px;
+    left: 10px;
+    bottom: 25px;
     position: absolute;
     border-radius: 2px;
 

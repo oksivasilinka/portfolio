@@ -33,4 +33,5 @@ const FieldsWrapper = styled.div`
   align-items: start;
   width: 100%;
   gap: 40px;
+  padding: 20px 0;
 `

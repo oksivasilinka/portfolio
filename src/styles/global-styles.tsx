@@ -7,13 +7,15 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  html, body {
+    min-width: 340px;
+  }
 
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: ${theme.colors.font};
     cursor: default;
     line-height: 1.2;
-    min-width: 360px;
     &:focus-visible {
       outline: 1px solid ${theme.colors.font};
     }

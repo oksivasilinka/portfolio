@@ -16,7 +16,7 @@ export const Field = ({ label }: Props) => {
 }
 
 const StyledField = styled.input`
-  border-bottom: 1px solid ${theme.colors.secondary};
+  border-bottom: 1px solid ${theme.colors.accent};
   width: 100%;
   padding: 5px;
 

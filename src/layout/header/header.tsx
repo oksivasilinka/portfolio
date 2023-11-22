@@ -18,9 +18,10 @@ export const Header = () => {
 export const StyledHeader = styled.header`
   position: fixed;
   width: 100%;
-  background-color: ${theme.colors.primaryBg};
-  border-bottom: 1px solid ${theme.colors.secondary};
+  background-color: rgba(12, 7, 10, 0.7);
+  border-bottom: 1px solid rgba(158, 255, 0, 0.3);
   z-index: 9999;
+
   @media ${theme.media.tablet} {
     border-bottom: none;
   }

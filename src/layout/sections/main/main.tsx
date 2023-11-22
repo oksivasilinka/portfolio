@@ -1,6 +1,5 @@
 import photo from 'assets/IMG_20200426_163541_1-EDIT.jpg'
 import styled from 'styled-components'
-import { FlexWrapper } from 'components/flex-wrapper'
 import { Button } from 'components/button/button'
 import { theme } from 'styles/theme'
 import { Container } from 'components/container/container'
@@ -11,54 +10,67 @@ export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper justify={'center'} align={'center'} gap={'50px'} wrap={'wrap-reverse'}>
+        <MainWrapper>
           <Photo src={photo} alt={'main-photo'} />
-
           <Wrapper>
             <Name>
               Oksana <br />
               Kovalchuk
             </Name>
             <MainTitle>Frontend Developer</MainTitle>
-            <ButtonWrapper>
-              {/*<Button>*/}
-              {/*  <Icon id={'send'} height={'20'} width={'25'} viewBox={'0 0 20 20'} />*/}
-              {/*  Send Message*/}
-              {/*</Button>*/}
-              <Button variant={'outlined'}>
-                <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
-                Download CV
-              </Button>
-            </ButtonWrapper>
           </Wrapper>
-        </FlexWrapper>
+          <ButtonWrapper>
+            <Button>
+              <Icon id={'send'} height={'20'} width={'25'} viewBox={'0 0 20 20'} />
+              Send Message
+            </Button>
+            <Button variant={'outlined'}>
+              <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
+              Download CV
+            </Button>
+          </ButtonWrapper>
+        </MainWrapper>
       </Container>
     </StyledMain>
   )
 }
 
 const StyledMain = styled.section`
+  padding-top: 130px;
   min-height: 100vh;
   display: flex;
+  align-items: center;
+  @media ${theme.media.tablet} {
+    padding-top: 70px;
+  }
+`
+
+const MainWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 3fr 2fr;
+  column-gap: 50px;
+  align-content: center;
+  @media ${theme.media.tablet} {
+    justify-content: center;
+    grid-template-columns: unset;
+    grid-auto-rows: unset;
+    row-gap: 40px;
+  }
 `
 
 const Photo = styled.img`
-  width: 400px;
-  max-height: 500px;
-  height: 100%;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
   object-fit: cover;
   border-radius: 24px;
   box-shadow: ${theme.shadow.main};
-  @media ${theme.media.desktopSmall} {
-    width: 300px;
-
-    max-height: 370px;
-    height: 100%;
-  }
-
+  grid-row-start: 1;
+  grid-row-end: 3;
   @media ${theme.media.tablet} {
-    //width: 280px;
-    //height: 320px;
+    grid-row-start: unset;
+    grid-row-end: unset;
   }
 `
 
@@ -74,13 +86,16 @@ const MainTitle = styled.h1`
 const ButtonWrapper = styled.div`
   display: flex;
   gap: 30px;
-  padding-top: 50px;
   flex-wrap: wrap;
+  align-content: start;
+  padding-top: 20px;
   width: 100%;
 `
 
 const Wrapper = styled.div`
-  @media screen and (max-width: 814px) {
-    //padding-top: 150px;
+  display: grid;
+  align-content: center;
+  @media ${theme.media.tablet} {
+    grid-row-start: 1;
   }
 `
