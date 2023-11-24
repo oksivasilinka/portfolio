@@ -90,6 +90,9 @@ const ButtonWrapper = styled.div`
   align-content: start;
   padding-top: 20px;
   width: 100%;
+  @media ${theme.media.tablet} {
+    padding-top: 0;
+  }
 `
 
 const Wrapper = styled.div`

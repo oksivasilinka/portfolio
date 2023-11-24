@@ -3,7 +3,7 @@ import { PortfolioItem } from 'layout/sections/portfolio/portfolioItem/portfolio
 import styled from 'styled-components'
 import { FlexWrapper } from 'components/flex-wrapper'
 import { Container } from 'components/container/container'
-import cards from '../../../assets/cards.png'
+import cards from '../../../assets/portfolio-cards.webp'
 import photo from '../../../assets/mac.jpg'
 
 const projects = [
@@ -43,7 +43,7 @@ export const Portfolio = () => {
       <Container>
         <SectionTitle>Portfolio</SectionTitle>
 
-        <FlexWrapper wrap={'wrap'} justify={'space-around'} align={'stretch'}>
+        <FlexWrapper wrap={'wrap'} justify={'space-evenly'} gap={'20px'} align={'stretch'}>
           {projects.map((project) => (
             <PortfolioItem
               name={project.name}
@@ -59,6 +59,4 @@ export const Portfolio = () => {
   )
 }
 
-const StyledPortfolio = styled.section`
-  min-height: 100vh;
-`
+const StyledPortfolio = styled.section``

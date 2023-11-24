@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   html, body {
-    min-width: 340px;
+    min-width: 360px;
   }
 
   body {
@@ -47,6 +47,9 @@ export const GlobalStyles = createGlobalStyle`
   }
   section {
     padding-bottom: 100px;
+    @media ${theme.media.mobile} {
+      padding-bottom: 70px;
+    }
   }
 
   section:nth-last-of-type(odd) {

@@ -16,32 +16,39 @@ export const Field = ({ label }: Props) => {
 }
 
 const StyledField = styled.input`
-  border-bottom: 1px solid ${theme.colors.accent};
-  width: 100%;
-  padding: 5px;
+  border: 1px solid rgba(158, 255, 0, 0.5);
+  background-color: ${theme.colors.secondaryBg};
+  max-width: 540px;
+  width: calc(100% - 22px);
+  padding: 10px 10px;
+  border-radius: 10px;
 
   &::placeholder {
     opacity: 0;
   }
+  @media ${theme.media.mobile} {
+    padding: 8px 10px;
+  }
 `
 const FieldWrapper = styled.div`
-  width: 100%;
   position: relative;
 
   input:focus + label,
   input:not(:placeholder-shown) + label {
-    transform: translateY(-28px);
-    font-size: 14px;
+    transform: translateY(-40px);
+    ${font({ max: 14, min: 12 })};
+    @media ${theme.media.mobile} {
+      transform: translateY(-32px);
+    }
   }
 
   label {
-    font-size: 16px;
     position: absolute;
-    left: 5px;
-    bottom: 5px;
+    left: 10px;
+    bottom: 10px;
     opacity: 0.6;
     transition: 0.3s;
 
-    ${font({ max: 16, min: 12 })};
+    ${font({ max: 16, min: 14 })};
   }
 `

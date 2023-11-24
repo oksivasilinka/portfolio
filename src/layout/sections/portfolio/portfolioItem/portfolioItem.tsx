@@ -16,10 +16,10 @@ export const PortfolioItem = ({ name, description, url, photo }: Props) => {
       <ImageWrapper>
         <Photo src={photo} alt={'photo'} />
         <WrapperButton>
-          <Button size={'small'}>
+          <Button>
             <LinkButton>Demo</LinkButton>
           </Button>
-          <Button size={'small'} variant={'outlined'}>
+          <Button variant={'outlined'}>
             <LinkButton>Code</LinkButton>
           </Button>
         </WrapperButton>
@@ -36,10 +36,12 @@ export const PortfolioItem = ({ name, description, url, photo }: Props) => {
 const StyledPortfolioItem = styled.div`
   background-color: ${theme.colors.primaryBg};
   border-radius: 24px;
-  max-width: 540px;
+  max-width: 500px;
+  width: 370px;
   box-shadow: ${theme.shadow.main};
+  flex-grow: 1;
   padding-bottom: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   position: relative;
 `
 
@@ -59,17 +61,34 @@ const ImageWrapper = styled.div`
   justify-items: center;
   align-content: center;
   position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    right: 8px;
+    bottom: 9px;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+  }
+
   &:hover {
     &::before {
-      content: '';
-      position: absolute;
-      top: 9px;
-      left: 8px;
-      right: 8px;
-      bottom: 9px;
-      backdrop-filter: blur(4px);
-      background: rgba(0, 0, 0, 0.6);
+      opacity: 1;
     }
+
+    ${WrapperButton} {
+      z-index: 10;
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    &:before {
+      opacity: 1;
+    }
+
     ${WrapperButton} {
       z-index: 10;
     }
@@ -87,7 +106,7 @@ const StyledTitle = styled.h3`
 
 const StyledDescription = styled.p`
   padding-top: 20px;
-  ${font({ weight: 500, max: 16, min: 14 })};
+  font-size: 14px;
 `
 
 const Photo = styled.img`
@@ -95,7 +114,7 @@ const Photo = styled.img`
   padding: 10px;
   width: 100%;
   object-fit: cover;
-  height: 300px;
+  height: 270px;
 `
 const StyledLink = styled.a`
   text-decoration: underline;

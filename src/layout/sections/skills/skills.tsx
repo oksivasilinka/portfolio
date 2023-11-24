@@ -3,6 +3,7 @@ import { SectionTitle } from 'components/section-title/section-title'
 import { FlexWrapper } from 'components/flex-wrapper'
 import { Skill } from 'layout/sections/skills/skill/skill'
 import { Container } from 'components/container/container'
+import { theme } from 'styles/theme'
 
 const skills = [
   { idIcon: 'react', title: 'React' },
@@ -38,5 +39,8 @@ export const Skills = () => {
 const StyledSkills = styled.section``
 
 const SkillsWrapper = styled.div`
-  padding: 50px 0;
+  padding-top: 50px;
+  @media ${theme.media.tablet} {
+    padding-top: 20px;
+  }
 `
