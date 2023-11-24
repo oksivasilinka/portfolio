@@ -20,7 +20,8 @@ export const Contacts = () => {
         <SectionTitle>Contacts</SectionTitle>
         <FlexWrapper gap={'40px'} justify={'center'} direction={'column'}>
           <SectionText>
-            Send me a message, I will contact you shortly. Or contact me in a way more convenient for you
+            Send me a message, I will contact you shortly. <br />
+            Or contact me in a way more convenient for you
           </SectionText>
           <SocialIcons icons={icons} />
           <ContactsForm />

@@ -18,5 +18,5 @@ const StyledFooter = styled.footer`
 const StyledText = styled.p`
   text-align: center;
   opacity: 0.8;
-  ${font({ max: 14, min: 12 })};
+  ${font({ max: 14, min: 12, weight: 300 })};
 `

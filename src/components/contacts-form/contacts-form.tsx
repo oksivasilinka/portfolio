@@ -18,6 +18,6 @@ const StyledForm = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   margin: 0 auto;
 `

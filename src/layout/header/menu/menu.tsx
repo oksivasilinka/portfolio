@@ -43,6 +43,7 @@ export const ListItem = styled.li``
 export const Link = styled.a`
   color: ${theme.colors.accent};
   font-size: 18px;
+  line-height: 1;
   font-weight: 500;
 
   &:hover {

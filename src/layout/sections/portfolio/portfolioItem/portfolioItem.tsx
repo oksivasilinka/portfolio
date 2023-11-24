@@ -107,6 +107,7 @@ const StyledTitle = styled.h3`
 const StyledDescription = styled.p`
   padding-top: 20px;
   font-size: 14px;
+  font-weight: 300;
 `
 
 const Photo = styled.img`

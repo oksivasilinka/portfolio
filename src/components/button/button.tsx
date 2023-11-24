@@ -8,7 +8,7 @@ type Props = {
 
 export const Button = styled.button<Props>`
   background-color: ${theme.colors.accent};
-  padding: 10px 24px;
+  padding: 12px 26px;
   border-radius: 10px;
   display: flex;
   align-items: center;

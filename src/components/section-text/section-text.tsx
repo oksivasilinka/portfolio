@@ -6,5 +6,5 @@ export const SectionText = styled.p`
   max-width: 600px;
   margin: 0 auto;
   width: 100%;
-  ${font({ weight: 400, max: 18, min: 14, lineHeight: 1.5 })};
+  ${font({ weight: 300, max: 18, min: 14, lineHeight: 1.5 })};
 `

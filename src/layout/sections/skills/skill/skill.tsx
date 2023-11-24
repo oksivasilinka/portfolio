@@ -10,20 +10,14 @@ type Props = {
 
 export const Skill = ({ title, idIcon }: Props) => {
   return (
-    <StyledSkill>
-      <FlexWrapper direction={'column'} align={'center'}>
-        <IconWrapper>
-          <Icon id={idIcon} />
-        </IconWrapper>
-        <StyledSkillTitle>{title}</StyledSkillTitle>
-      </FlexWrapper>
-    </StyledSkill>
+    <FlexWrapper direction={'column'} align={'center'}>
+      <IconWrapper>
+        <Icon id={idIcon} />
+      </IconWrapper>
+      <StyledSkillTitle>{title}</StyledSkillTitle>
+    </FlexWrapper>
   )
 }
-
-const StyledSkill = styled.div`
-  padding: 0 10px;
-`
 
 const StyledSkillTitle = styled.h3`
   font-size: 14px;

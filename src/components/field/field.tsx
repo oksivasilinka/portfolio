@@ -49,6 +49,6 @@ const FieldWrapper = styled.div`
     opacity: 0.6;
     transition: 0.3s;
 
-    ${font({ max: 16, min: 14 })};
+    ${font({ max: 16, min: 14, weight: 300 })};
   }
 `
