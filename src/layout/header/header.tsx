@@ -1,28 +1,33 @@
-import styled from 'styled-components'
-import { Menu } from 'layout/header/menu/menu'
-import { Container } from 'components/container/container'
-import { theme } from 'styles/theme'
-import { MobileMenu } from 'layout/header/mobile-menu/mobile-menu'
+import { DesktopMenu } from 'layout/header/header-menu/desktop-menu/desktop-menu'
+import { Container } from 'components'
+import { S } from './header_styles'
+import { MobileMenu } from 'layout/header/header-menu/mobile-menu/mobile-menu'
+import { useEffect, useState } from 'react'
+
+export type MenuItem = { href: string; title: string }
+const menuItems = [
+  { href: '#', title: 'Home' },
+  { href: '#', title: 'About Me' },
+  { href: '#', title: 'Skills' },
+  { href: '#', title: 'Portfolio' },
+  { href: '#', title: 'Contacts' },
+]
 
 export const Header = () => {
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakPoint = 768
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handleWindowResize)
+    return () => window.removeEventListener('resize', handleWindowResize)
+  }, [])
+
   return (
-    <StyledHeader>
+    <S.Header>
       <Container>
-        <Menu />
-        <MobileMenu />
+        {width > breakPoint ? <DesktopMenu menuItems={menuItems} /> : <MobileMenu menuItems={menuItems} />}
       </Container>
-    </StyledHeader>
+    </S.Header>
   )
 }
-
-export const StyledHeader = styled.header`
-  position: fixed;
-  width: 100%;
-  background-color: rgba(12, 7, 10, 0.7);
-  border-bottom: 1px solid rgba(158, 255, 0, 0.3);
-  z-index: 9999;
-
-  @media ${theme.media.tablet} {
-    border-bottom: none;
-  }
-`
