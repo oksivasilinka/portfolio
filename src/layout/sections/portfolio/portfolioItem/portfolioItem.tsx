@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { theme } from 'styles/theme'
-import { Button } from 'components/button/button'
+import { Button } from 'components'
 import { font } from 'styles/common'
 
 type Props = {

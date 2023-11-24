@@ -1,4 +1,4 @@
-import { Icon } from 'components/icon/icon'
+import { Icon } from 'components'
 import styled from 'styled-components'
 import { theme } from 'styles/theme'
 

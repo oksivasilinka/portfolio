@@ -1,10 +1,6 @@
 import styled from 'styled-components'
-import { FlexWrapper } from 'components/flex-wrapper'
-import { SectionTitle } from 'components/section-title/section-title'
-import { SectionText } from 'components/section-text/section-text'
-import { Container } from 'components/container/container'
-import { ContactsForm } from 'components/contacts-form/contacts-form'
 import { SocialIcons } from 'layout/sections/contacts/social-icons/social-icons'
+import { ContactsForm, Container, FlexWrapper, SectionText, SectionTitle } from 'components'
 
 const icons = [
   { url: '#', id: 'linkedin' },

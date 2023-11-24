@@ -1,10 +1,8 @@
 import photo from 'assets/IMG_20200426_163541_1-EDIT.jpg'
+import { Button, Container, Icon } from 'components'
 import styled from 'styled-components'
-import { Button } from 'components/button/button'
-import { theme } from 'styles/theme'
-import { Container } from 'components/container/container'
-import { Icon } from 'components/icon/icon'
 import { font } from 'styles/common'
+import { theme } from 'styles/theme'
 
 export const Main = () => {
   return (

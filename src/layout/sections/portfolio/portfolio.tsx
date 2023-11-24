@@ -1,10 +1,8 @@
-import { SectionTitle } from 'components/section-title/section-title'
 import { PortfolioItem } from 'layout/sections/portfolio/portfolioItem/portfolioItem'
 import styled from 'styled-components'
-import { FlexWrapper } from 'components/flex-wrapper'
-import { Container } from 'components/container/container'
 import cards from '../../../assets/portfolio-cards.webp'
 import photo from '../../../assets/mac.jpg'
+import { Container, FlexWrapper, SectionTitle } from 'components'
 
 const projects = [
   {

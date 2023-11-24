@@ -1,7 +1,6 @@
-import { FlexWrapper } from 'components/flex-wrapper'
 import styled from 'styled-components'
-import { Icon } from 'components/icon/icon'
 import { theme } from 'styles/theme'
+import { FlexWrapper, Icon } from 'components'
 
 type Props = {
   title: string

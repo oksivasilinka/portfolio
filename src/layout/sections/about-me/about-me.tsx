@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import { SectionTitle } from 'components/section-title/section-title'
-import { SectionText } from 'components/section-text/section-text'
-import { Container } from 'components/container/container'
+import { Container, SectionText, SectionTitle } from 'components'
 
 export const AboutMe = () => {
   return (

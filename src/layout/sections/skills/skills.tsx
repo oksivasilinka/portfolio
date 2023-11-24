@@ -1,9 +1,7 @@
 import styled from 'styled-components'
-import { SectionTitle } from 'components/section-title/section-title'
-import { FlexWrapper } from 'components/flex-wrapper'
 import { Skill } from 'layout/sections/skills/skill/skill'
-import { Container } from 'components/container/container'
 import { theme } from 'styles/theme'
+import { Container, FlexWrapper, SectionTitle } from 'components'
 
 const skills = [
   { idIcon: 'react', title: 'React' },
