@@ -1,39 +1,8 @@
 import styled from 'styled-components'
 import { theme } from 'styles/theme'
-import { Button } from 'components'
 import { font } from 'styles/common'
 
-type Props = {
-  name: string
-  photo: string
-  description: string
-  url: string
-}
-
-export const PortfolioItem = ({ name, description, url, photo }: Props) => {
-  return (
-    <StyledPortfolioItem>
-      <ImageWrapper>
-        <Photo src={photo} alt={'photo'} />
-        <WrapperButton>
-          <Button>
-            <LinkButton>Demo</LinkButton>
-          </Button>
-          <Button variant={'outlined'}>
-            <LinkButton>Code</LinkButton>
-          </Button>
-        </WrapperButton>
-      </ImageWrapper>
-      <Wrapper>
-        <StyledTitle>{name}</StyledTitle>
-        <StyledDescription>{description}</StyledDescription>
-      </Wrapper>
-      <StyledLink href={url}>See project</StyledLink>
-    </StyledPortfolioItem>
-  )
-}
-
-const StyledPortfolioItem = styled.div`
+const Project = styled.div`
   background-color: ${theme.colors.primaryBg};
   border-radius: 24px;
   max-width: 500px;
@@ -45,7 +14,7 @@ const StyledPortfolioItem = styled.div`
   position: relative;
 `
 
-const WrapperButton = styled.div`
+const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
@@ -79,7 +48,7 @@ const ImageWrapper = styled.div`
       opacity: 1;
     }
 
-    ${WrapperButton} {
+    ${ButtonWrapper} {
       z-index: 10;
     }
   }
@@ -89,22 +58,22 @@ const ImageWrapper = styled.div`
       opacity: 1;
     }
 
-    ${WrapperButton} {
+    ${ButtonWrapper} {
       z-index: 10;
     }
   }
 `
 
-const Wrapper = styled.div`
+const InfoWrapper = styled.div`
   padding: 20px;
   margin-bottom: 20px;
 `
 
-const StyledTitle = styled.h3`
+const Title = styled.h3`
   ${font({ color: theme.colors.accent, weight: 700, max: 26, min: 20, lineHeight: 0.9 })};
 `
 
-const StyledDescription = styled.p`
+const Description = styled.p`
   padding-top: 20px;
   font-size: 14px;
   font-weight: 300;
@@ -117,7 +86,7 @@ const Photo = styled.img`
   object-fit: cover;
   height: 270px;
 `
-const StyledLink = styled.a`
+const Link = styled.a`
   text-decoration: underline;
   position: absolute;
   bottom: 20px;
@@ -125,6 +94,4 @@ const StyledLink = styled.a`
   ${font({ color: theme.colors.accent, max: 16, min: 14 })};
 `
 
-const LinkButton = styled.a`
-  font-size: 16px;
-`
+export const S = { Project, ImageWrapper, Photo, ButtonWrapper, Title, Description, InfoWrapper, Link }
