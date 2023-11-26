@@ -2,13 +2,18 @@ import photo from 'assets/IMG_20200426_163541_1-EDIT.jpg'
 import { Button, Container, Icon } from 'components'
 import { S } from './main_styles'
 import Typewriter from 'typewriter-effect'
+import Tilt from 'react-parallax-tilt'
 
 export const Main = () => {
   return (
     <S.Main>
       <Container>
         <S.MainWrapper>
-          <S.Photo src={photo} alt={'main-photo'} />
+          <S.PhotoWrapper>
+            <Tilt>
+              <S.Photo src={photo} alt={'main-photo'} />
+            </Tilt>
+          </S.PhotoWrapper>
           <S.InfoWrapper>
             <S.Name>
               Oksana <br />

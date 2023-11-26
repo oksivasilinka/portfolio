@@ -18,6 +18,7 @@ const MainWrapper = styled.div`
   grid-auto-rows: 3fr 2fr;
   column-gap: 50px;
   align-content: center;
+  }
   @media ${theme.media.tablet} {
     justify-content: center;
     grid-template-columns: unset;
@@ -25,20 +26,21 @@ const MainWrapper = styled.div`
     row-gap: 40px;
   }
 `
-
-const Photo = styled.img`
+const PhotoWrapper = styled.div`
   margin: 0 auto;
-  max-width: 400px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 24px;
-  box-shadow: ${theme.shadow.main};
   grid-row-start: 1;
   grid-row-end: 3;
   @media ${theme.media.tablet} {
     grid-row-start: unset;
     grid-row-end: unset;
   }
+`
+const Photo = styled.img`
+  max-width: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: ${theme.shadow.main};
 `
 
 const Name = styled.h2`
@@ -73,4 +75,4 @@ const InfoWrapper = styled.div`
   }
 `
 
-export const S = { Main, MainWrapper, Photo, InfoWrapper, Name, MainTitle, ButtonWrapper }
+export const S = { Main, MainWrapper, Photo, InfoWrapper, Name, MainTitle, ButtonWrapper, PhotoWrapper }
