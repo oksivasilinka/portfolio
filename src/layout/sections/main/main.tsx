@@ -6,7 +6,7 @@ import Tilt from 'react-parallax-tilt'
 
 export const Main = () => {
   return (
-    <S.Main>
+    <S.Main id={'home'}>
       <Container>
         <S.MainWrapper>
           <S.PhotoWrapper>

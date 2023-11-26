@@ -3,7 +3,7 @@ import { Container, SectionText, SectionTitle } from 'components'
 
 export const AboutMe = () => {
   return (
-    <StyledAboutMe>
+    <StyledAboutMe id={'aboutMe'}>
       <Container>
         <SectionTitle>About me</SectionTitle>
         <SectionText>

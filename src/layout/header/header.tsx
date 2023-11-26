@@ -6,11 +6,11 @@ import { useEffect, useState } from 'react'
 
 export type MenuItem = { href: string; title: string }
 const menuItems = [
-  { href: '#', title: 'Home' },
-  { href: '#', title: 'About Me' },
-  { href: '#', title: 'Skills' },
-  { href: '#', title: 'Portfolio' },
-  { href: '#', title: 'Contacts' },
+  { href: 'home', title: 'Home' },
+  { href: 'aboutMe', title: 'About Me' },
+  { href: 'skills', title: 'Skills' },
+  { href: 'portfolio', title: 'Portfolio' },
+  { href: 'contacts', title: 'Contacts' },
 ]
 
 export const Header = () => {

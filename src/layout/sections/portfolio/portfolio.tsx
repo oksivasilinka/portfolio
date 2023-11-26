@@ -41,7 +41,7 @@ const projects = [
 
 export const Portfolio = () => {
   return (
-    <StyledPortfolio>
+    <StyledPortfolio id={'portfolio'}>
       <Container>
         <SectionTitle>Portfolio</SectionTitle>
 

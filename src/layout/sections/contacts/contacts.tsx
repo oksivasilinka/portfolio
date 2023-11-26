@@ -11,7 +11,7 @@ const icons = [
 
 export const Contacts = () => {
   return (
-    <StyledContacts>
+    <StyledContacts id={'contacts'}>
       <Container>
         <SectionTitle>Contacts</SectionTitle>
         <FlexWrapper gap={'40px'} justify={'center'} direction={'column'}>

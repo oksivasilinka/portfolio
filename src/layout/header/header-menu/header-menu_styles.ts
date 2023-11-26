@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { theme } from 'styles/theme'
+import { Link } from 'react-scroll'
 
 const Nav = styled.nav`
   @media ${theme.media.tablet} {
@@ -51,15 +52,16 @@ const NavList = styled.ul`
   }
 `
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   color: ${theme.colors.accent};
   font-size: 18px;
   line-height: 1;
   font-weight: 500;
 
-  &:hover {
+  &:hover,
+  &:active {
     color: ${theme.colors.font};
   }
 `
 
-export const S = { Nav, NavList, MobileNav, MenuPopup, Link }
+export const S = { Nav, NavList, MobileNav, MenuPopup, NavLink }

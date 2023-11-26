@@ -20,7 +20,7 @@ export const MobileMenu = ({ menuItems }: Props) => {
         <span></span>
       </BurgerButton>
       <S.MenuPopup isOpen={isOpen} onClick={openMenuHandler}>
-        <Menu menuItems={menuItems} />
+        <Menu menuItems={menuItems} onItemClick={openMenuHandler} />
       </S.MenuPopup>
     </S.MobileNav>
   )
