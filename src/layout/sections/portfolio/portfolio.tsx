@@ -62,4 +62,6 @@ export const Portfolio = () => {
   )
 }
 
-const StyledPortfolio = styled.section``
+const StyledPortfolio = styled.section`
+  position: relative;
+`

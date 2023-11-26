@@ -26,4 +26,6 @@ export const AboutMe = () => {
   )
 }
 
-const StyledAboutMe = styled.section``
+const StyledAboutMe = styled.section`
+  position: relative;
+`

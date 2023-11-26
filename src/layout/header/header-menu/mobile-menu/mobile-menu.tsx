@@ -11,18 +11,15 @@ type Props = {
 export const MobileMenu = ({ menuItems }: Props) => {
   const [isOpen, setIsOpen] = useState(false)
   const openMenuHandler = () => {
-    if (!isOpen) {
-      setIsOpen(true)
-    } else {
-      setIsOpen(false)
-    }
+    setIsOpen(!isOpen)
   }
+
   return (
     <S.MobileNav>
       <BurgerButton onClick={openMenuHandler} isOpen={isOpen}>
         <span></span>
       </BurgerButton>
-      <S.MenuPopup isOpen={isOpen}>
+      <S.MenuPopup isOpen={isOpen} onClick={openMenuHandler}>
         <Menu menuItems={menuItems} />
       </S.MenuPopup>
     </S.MobileNav>

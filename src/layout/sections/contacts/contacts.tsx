@@ -28,6 +28,7 @@ export const Contacts = () => {
 }
 
 const StyledContacts = styled.section`
+  position: relative;
   ${SectionText} {
     max-width: 500px;
     width: 100%;

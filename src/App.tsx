@@ -7,10 +7,12 @@ import { Contacts } from 'layout/sections/contacts/contacts'
 import { ThemeProvider } from 'styled-components'
 import { theme } from 'styles/theme'
 import { Footer } from 'layout/sections/footer/footer'
+import { Particle } from 'components/particle/particle'
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <Particle />
       <Header />
       <Main />
       <AboutMe />
