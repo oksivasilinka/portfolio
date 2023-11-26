@@ -8,6 +8,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from 'styles/theme'
 import { Footer } from 'layout/sections/footer/footer'
 import { Particle } from 'components/particle/particle'
+import { GoTopButton } from 'components/go-top-button/go-top-button'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Portfolio />
       <Contacts />
       <Footer />
+      <GoTopButton />
     </ThemeProvider>
   )
 }

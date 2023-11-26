@@ -60,6 +60,7 @@ const ImageWrapper = styled.div`
 
     ${ButtonWrapper} {
       z-index: 10;
+      gap: 15px;
     }
   }
 `

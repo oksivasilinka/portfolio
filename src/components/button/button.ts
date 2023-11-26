@@ -16,6 +16,7 @@ export const Button = styled.button<Props>`
   justify-content: center;
   gap: 12px;
   ${font({ color: theme.colors.primaryBg, weight: 700, max: 18, min: 14 })};
+
   a {
     color: ${theme.colors.primaryBg};
   }
@@ -23,9 +24,10 @@ export const Button = styled.button<Props>`
   ${(props) =>
     props.variant === 'outlined' &&
     css<Props>`
-      background-color: ${theme.colors.primaryBg};
+      background-color: transparent;
       color: ${theme.colors.accent};
       outline: 2px solid ${theme.colors.accent};
+
       a {
         color: ${theme.colors.accent};
       }

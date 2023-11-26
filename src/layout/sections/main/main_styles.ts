@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { theme } from 'styles/theme'
 import { font } from 'styles/common'
+import { Button } from 'components'
 
 const Main = styled.section`
   padding-top: 130px;
@@ -62,6 +63,12 @@ const ButtonWrapper = styled.div`
   align-content: start;
   padding-top: 20px;
   width: 100%;
+  ${Button} {
+    &:last-child {
+      background-color: ${theme.colors.primaryBg};
+    }
+  }
+
   @media ${theme.media.tablet} {
     padding-top: 0;
   }
