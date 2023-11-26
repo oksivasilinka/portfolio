@@ -48,6 +48,9 @@ const Name = styled.h2`
 const MainTitle = styled.h1`
   ${font({ weight: 700, max: 40, min: 30 })};
   padding-top: 30px;
+  p {
+    display: none;
+  }
 `
 
 const ButtonWrapper = styled.div`

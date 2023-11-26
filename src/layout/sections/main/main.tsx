@@ -1,6 +1,7 @@
 import photo from 'assets/IMG_20200426_163541_1-EDIT.jpg'
 import { Button, Container, Icon } from 'components'
 import { S } from './main_styles'
+import Typewriter from 'typewriter-effect'
 
 export const Main = () => {
   return (
@@ -13,7 +14,16 @@ export const Main = () => {
               Oksana <br />
               Kovalchuk
             </S.Name>
-            <S.MainTitle>Frontend Developer</S.MainTitle>
+            <S.MainTitle>
+              <p> Frontend Developer</p>
+              <Typewriter
+                options={{
+                  strings: ['Frontend Developer'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </S.MainTitle>
           </S.InfoWrapper>
           <S.ButtonWrapper>
             <Button>
