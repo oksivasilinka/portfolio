@@ -36,7 +36,7 @@ const PhotoWrapper = styled.div`
   }
 `
 const Photo = styled.img`
-  max-width: 400px;
+  max-width: 410px;
   width: 100%;
   object-fit: cover;
   border-radius: 24px;
@@ -48,7 +48,7 @@ const Name = styled.h2`
 `
 
 const MainTitle = styled.h1`
-  ${font({ weight: 700, max: 40, min: 30 })};
+  ${font({ weight: 700, max: 38, min: 30 })};
   padding-top: 30px;
   p {
     display: none;

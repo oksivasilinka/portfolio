@@ -7,6 +7,7 @@ type Props = {
 }
 
 export const Button = styled.button<Props>`
+  position: relative;
   background-color: ${theme.colors.accent};
   padding: 12px 26px;
   border-radius: 10px;
@@ -22,7 +23,7 @@ export const Button = styled.button<Props>`
   ${(props) =>
     props.variant === 'outlined' &&
     css<Props>`
-      background-color: transparent;
+      background-color: ${theme.colors.primaryBg};
       color: ${theme.colors.accent};
       outline: 2px solid ${theme.colors.accent};
       a {
