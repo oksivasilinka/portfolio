@@ -3,7 +3,7 @@ import { Icon } from 'components/icon'
 import { theme } from 'styles/theme'
 import { animateScroll as scroll } from 'react-scroll'
 import { useEffect, useState } from 'react'
-import { Zoom } from 'react-awesome-reveal'
+import { AnimatePresence, motion } from 'framer-motion'
 
 export const GoTopButton = () => {
   const [isShowButton, setIsShowButton] = useState(false)
@@ -19,15 +19,15 @@ export const GoTopButton = () => {
   }, [])
 
   return (
-    <>
+    <AnimatePresence>
       {isShowButton && (
         <StyledGoTopButton onClick={scroll.scrollToTop}>
-          <Zoom>
+          <motion.div initial={{ x: 30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: 30, opacity: 0 }}>
             <Icon id={'arrowTop'} height={'40'} width={'40'} viewBox={'0 0 40 40'} />
-          </Zoom>
+          </motion.div>
         </StyledGoTopButton>
       )}
-    </>
+    </AnimatePresence>
   )
 }
 
