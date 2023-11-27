@@ -3,6 +3,7 @@ import { Icon } from 'components/icon'
 import { theme } from 'styles/theme'
 import { animateScroll as scroll } from 'react-scroll'
 import { useEffect, useState } from 'react'
+import { Zoom } from 'react-awesome-reveal'
 
 export const GoTopButton = () => {
   const [isShowButton, setIsShowButton] = useState(false)
@@ -21,7 +22,9 @@ export const GoTopButton = () => {
     <>
       {isShowButton && (
         <StyledGoTopButton onClick={scroll.scrollToTop}>
-          <Icon id={'arrowTop'} height={'40'} width={'40'} viewBox={'0 0 40 40'} />
+          <Zoom>
+            <Icon id={'arrowTop'} height={'40'} width={'40'} viewBox={'0 0 40 40'} />
+          </Zoom>
         </StyledGoTopButton>
       )}
     </>

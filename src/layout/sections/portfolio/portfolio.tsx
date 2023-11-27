@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import cards from '../../../assets/portfolio-cards.webp'
 import photo from '../../../assets/mac.jpg'
 import { Container, FlexWrapper, SectionTitle } from 'components'
+import { Fade } from 'react-awesome-reveal'
 
 const projects = [
   {
@@ -44,19 +45,20 @@ export const Portfolio = () => {
     <StyledPortfolio id={'portfolio'}>
       <Container>
         <SectionTitle>Portfolio</SectionTitle>
-
-        <FlexWrapper wrap={'wrap'} justify={'space-evenly'} gap={'20px'} align={'stretch'}>
-          {projects.map((project) => (
-            <Project
-              name={project.name}
-              key={project.name}
-              description={project.description}
-              demo={project.demo}
-              code={project.code}
-              photo={project.photo}
-            />
-          ))}
-        </FlexWrapper>
+        <Fade>
+          <FlexWrapper wrap={'wrap'} justify={'space-evenly'} gap={'20px'} align={'stretch'}>
+            {projects.map((project) => (
+              <Project
+                name={project.name}
+                key={project.name}
+                description={project.description}
+                demo={project.demo}
+                code={project.code}
+                photo={project.photo}
+              />
+            ))}
+          </FlexWrapper>
+        </Fade>
       </Container>
     </StyledPortfolio>
   )

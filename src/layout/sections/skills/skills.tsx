@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Skill } from 'layout/sections/skills/skill/skill'
 import { theme } from 'styles/theme'
 import { Container, FlexWrapper, SectionTitle } from 'components'
+import { Fade } from 'react-awesome-reveal'
 
 const skills = [
   { idIcon: 'react', title: 'React' },
@@ -24,9 +25,11 @@ export const Skills = () => {
         <SectionTitle>Skills</SectionTitle>
         <SkillsWrapper>
           <FlexWrapper justify={'center'} gap={'50px'} wrap={'wrap'}>
-            {skills.map((skill) => (
-              <Skill key={skill.idIcon} title={skill.title} idIcon={skill.idIcon} />
-            ))}
+            <Fade damping={0.1} direction={'up'}>
+              {skills.map((skill) => (
+                <Skill key={skill.idIcon} title={skill.title} idIcon={skill.idIcon} />
+              ))}
+            </Fade>
           </FlexWrapper>
         </SkillsWrapper>
       </Container>
