@@ -12,7 +12,6 @@ const MobileNav = styled.nav`
   width: 100%;
   height: 70px;
   position: relative;
-  display: none;
 
   @media ${theme.media.tablet} {
     display: block;
@@ -27,13 +26,19 @@ const MenuPopup = styled.div<{ isOpen: boolean }>`
   right: 0;
   bottom: 0;
   z-index: 999;
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: ${theme.animations.transitions};
   ${(props) =>
     props.isOpen &&
     css<{ isOpen: boolean }>`
       display: flex;
       justify-content: center;
       align-items: center;
+      transform: translateY(0);
+      transition: 0.5s ease-in-out;
     `}
 `
 
@@ -41,6 +46,10 @@ const NavList = styled.ul`
   padding: 40px 0;
   display: flex;
   justify-content: space-around;
+  li {
+    width: 200px;
+    text-align: center;
+  }
   @media screen and (orientation: landscape) and (max-width: 1100px) {
     padding: 20px 0;
   }
@@ -59,8 +68,10 @@ const NavLink = styled(Link)`
   font-weight: 500;
 
   &:hover,
-  &:active {
+  &.active {
     color: ${theme.colors.font};
+    letter-spacing: 2px;
+    transition: ${theme.animations.transitions};
   }
 `
 

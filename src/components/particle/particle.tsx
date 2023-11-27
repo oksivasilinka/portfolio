@@ -28,7 +28,7 @@ export const Particle = () => {
             },
             onHover: {
               enable: true,
-              mode: 'attract',
+              mode: 'bounce',
             },
             resize: true,
           },

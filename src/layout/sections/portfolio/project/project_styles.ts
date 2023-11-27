@@ -46,6 +46,7 @@ const ImageWrapper = styled.div`
   &:hover {
     &::before {
       opacity: 1;
+      transition: ${theme.animations.transitions};
     }
 
     ${ButtonWrapper} {
@@ -93,6 +94,10 @@ const Link = styled.a`
   bottom: 20px;
   left: 20px;
   ${font({ color: theme.colors.accent, max: 16, min: 14 })};
+  &:hover {
+    letter-spacing: 2px;
+    transition: ${theme.animations.transitions};
+  }
 `
 
 export const S = { Project, ImageWrapper, Photo, ButtonWrapper, Title, Description, InfoWrapper, Link }

@@ -15,7 +15,7 @@ export const Menu = ({ menuItems, onItemClick }: Props) => {
           <S.NavLink
             to={`${item.href}`}
             smooth={true}
-            activeClass={'active'}
+            activeClass="active"
             spy={true}
             offset={-100}
             onClick={onItemClick}

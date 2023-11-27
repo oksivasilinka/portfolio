@@ -22,6 +22,12 @@ const StyledField = styled.input`
   width: calc(100% - 22px);
   padding: 10px 10px;
   border-radius: 10px;
+  &:hover,
+  &:active {
+    background-color: ${theme.colors.primaryBg};
+
+    transition: ${theme.animations.transitions};
+  }
 
   &::placeholder {
     opacity: 0;
@@ -47,7 +53,7 @@ const FieldWrapper = styled.div`
     left: 10px;
     bottom: 10px;
     opacity: 0.6;
-    transition: 0.3s;
+    transition: ${theme.animations.transitions};
 
     ${font({ max: 16, min: 14, weight: 300 })};
   }

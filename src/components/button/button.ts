@@ -33,7 +33,8 @@ export const Button = styled.button<Props>`
       }
     `}
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
     box-shadow: ${theme.shadow.main};
+    transition: ${theme.animations.transitions};
   }
 `

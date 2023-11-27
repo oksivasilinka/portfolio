@@ -42,6 +42,6 @@ const StyledGoTopButton = styled.button`
 
   &:hover {
     scale: 1.2;
-    transition: 1s;
+    transition: ${theme.animations.transitions};
   }
 `

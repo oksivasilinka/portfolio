@@ -14,6 +14,7 @@ const IconsList = styled.ul`
 const Icon = styled.li`
   &:hover {
     transform: scale(1.2);
+    transition: ${theme.animations.transitions};
   }
 `
 
@@ -22,6 +23,7 @@ const Link = styled.a`
 
   &:hover {
     color: ${theme.colors.font};
+    transition: ${theme.animations.transitions};
   }
 `
 export const S = { Icon, IconsList, Link }
