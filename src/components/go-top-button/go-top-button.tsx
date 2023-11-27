@@ -44,7 +44,7 @@ const StyledGoTopButton = styled.button`
   align-items: center;
 
   &:hover {
-    scale: 1.2;
+    scale: 1.4;
     transition: ${theme.animations.transitions};
   }
 `

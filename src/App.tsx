@@ -9,10 +9,12 @@ import { theme } from 'styles/theme'
 import { Footer } from 'layout/sections/footer/footer'
 import { Particle } from 'components/particle/particle'
 import { GoTopButton } from 'components/go-top-button/go-top-button'
+import { Cursor } from 'components/cursor/cursor'
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <Cursor />
       <Particle />
       <Header />
       <Main />

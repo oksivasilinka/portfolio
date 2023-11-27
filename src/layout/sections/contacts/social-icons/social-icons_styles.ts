@@ -13,7 +13,7 @@ const IconsList = styled.ul`
 `
 const Icon = styled.li`
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
     transition: ${theme.animations.transitions};
   }
 `
