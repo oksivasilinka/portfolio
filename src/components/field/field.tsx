@@ -4,13 +4,15 @@ import { font } from 'styles/common'
 
 type Props = {
   label: string
+  name: string
+  type?: 'email' | 'text'
 }
 
-export const Field = ({ label }: Props) => {
+export const Field = ({ label, name, type = 'text' }: Props) => {
   return (
     <FieldWrapper>
-      <StyledField id={label} placeholder={label} />
-      <label htmlFor={label}>{label}</label>
+      <StyledField type={type} name={name} required id={name} placeholder={label} />
+      <label htmlFor={name}>{label}</label>
     </FieldWrapper>
   )
 }
@@ -22,6 +24,7 @@ const StyledField = styled.input`
   width: calc(100% - 22px);
   padding: 10px 10px;
   border-radius: 10px;
+
   &:hover,
   &:active {
     background-color: ${theme.colors.primaryBg};
@@ -32,6 +35,7 @@ const StyledField = styled.input`
   &::placeholder {
     opacity: 0;
   }
+
   @media ${theme.media.mobile} {
     padding: 8px 10px;
   }
