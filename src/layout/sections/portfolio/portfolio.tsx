@@ -8,8 +8,8 @@ import { Fade } from 'react-awesome-reveal'
 const projects = [
   {
     name: 'Learning Platform',
-    demo: '#',
-    code: '#',
+    demo: 'https://it-inc-cards.vercel.app',
+    code: 'https://github.com/r2adler/it-inc-cards',
     photo: cards,
     description:
       'This application is designed for effective learning through flashcards that contain questions and answers. Users can create their own sets of flashcards or utilize pre-made decks. The application also allows adding images and videos to the flashcards to enhance information retention.',

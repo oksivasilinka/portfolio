@@ -1,10 +1,9 @@
-import photo from 'assets/IMG_20200426_163541_1-EDIT.jpg'
+import photo from 'assets/main-photo.webp'
 import { Button, Container, Icon } from 'components'
 import { S } from './main_styles'
 import Typewriter from 'typewriter-effect'
 import Tilt from 'react-parallax-tilt'
 import { Fade } from 'react-awesome-reveal'
-
 export const Main = () => {
   return (
     <S.Main id={'home'}>
@@ -34,9 +33,12 @@ export const Main = () => {
             </S.InfoWrapper>
             <S.ButtonWrapper>
               <Button>
-                <Icon id={'send'} height={'20'} width={'25'} viewBox={'0 0 20 20'} />
-                Send Message
+                <S.NavLink to={'contacts'} smooth={true}>
+                  <Icon id={'send'} height={'20'} width={'25'} viewBox={'0 0 20 20'} />
+                  Send Message
+                </S.NavLink>
               </Button>
+
               <Button variant={'outlined'}>
                 <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
                 Download CV

@@ -4,10 +4,10 @@ import { ContactsForm, Container, FlexWrapper, SectionText, SectionTitle } from 
 import { Fade } from 'react-awesome-reveal'
 
 const icons = [
-  { url: '#', id: 'linkedin' },
-  { url: '#', id: 'telegram' },
+  { url: 'https://www.linkedin.com/in/oksana--kovalchuk/', id: 'linkedin' },
+  { url: 'https://t.me/oksivasilinka', id: 'telegram' },
   { url: '#', id: 'email' },
-  { url: '#', id: 'github' },
+  { url: 'https://github.com/oksivasilinka', id: 'github' },
 ]
 
 export const Contacts = () => {

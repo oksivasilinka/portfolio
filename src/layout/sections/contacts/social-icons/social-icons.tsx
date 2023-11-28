@@ -15,7 +15,7 @@ export const SocialIcons = ({ icons }: Props) => {
     <S.IconsList>
       {icons.map((icon) => (
         <S.Icon key={icon.id}>
-          <S.Link>
+          <S.Link href={icon.url}>
             <Icon width={'30'} height={'30'} viewBox={'0 0 30 30'} id={icon.id} />
           </S.Link>
         </S.Icon>

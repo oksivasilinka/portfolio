@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { theme } from 'styles/theme'
 import { font } from 'styles/common'
 import { Button } from 'components'
+import { Link } from 'react-scroll'
 
 const Main = styled.section`
   padding-top: 130px;
@@ -82,4 +83,10 @@ const InfoWrapper = styled.div`
   }
 `
 
-export const S = { Main, MainWrapper, Photo, InfoWrapper, Name, MainTitle, ButtonWrapper, PhotoWrapper }
+const NavLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+`
+
+export const S = { Main, MainWrapper, Photo, InfoWrapper, Name, MainTitle, ButtonWrapper, PhotoWrapper, NavLink }
