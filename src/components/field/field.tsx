@@ -20,7 +20,6 @@ export const Field = ({ label, name, type = 'text' }: Props) => {
 const StyledField = styled.input`
   border: 1px solid rgba(158, 255, 0, 0.5);
   background-color: ${theme.colors.secondaryBg};
-  max-width: 540px;
   width: calc(100% - 22px);
   padding: 10px 10px;
   border-radius: 10px;

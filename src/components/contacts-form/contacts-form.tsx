@@ -35,7 +35,7 @@ export const ContactsForm = () => {
 }
 
 const StyledForm = styled.form`
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;

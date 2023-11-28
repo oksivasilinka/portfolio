@@ -79,6 +79,7 @@ const Description = styled.p`
   padding-top: 20px;
   font-size: 14px;
   font-weight: 300;
+  line-height: 1.3;
 `
 
 const Photo = styled.img`

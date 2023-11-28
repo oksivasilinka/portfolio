@@ -2,8 +2,8 @@ import photo from 'assets/main-photo.webp'
 import { Button, Container, Icon } from 'components'
 import { S } from './main_styles'
 import Typewriter from 'typewriter-effect'
-import Tilt from 'react-parallax-tilt'
 import { Fade } from 'react-awesome-reveal'
+
 export const Main = () => {
   return (
     <S.Main id={'home'}>
@@ -11,9 +11,7 @@ export const Main = () => {
         <Fade>
           <S.MainWrapper>
             <S.PhotoWrapper>
-              <Tilt>
-                <S.Photo src={photo} alt={'main-photo'} />
-              </Tilt>
+              <S.Photo src={photo} alt={'main-photo'} />
             </S.PhotoWrapper>
             <S.InfoWrapper>
               <S.Name>
