@@ -3,6 +3,7 @@ import { Button, Container, Icon } from 'components'
 import { S } from './main_styles'
 import Typewriter from 'typewriter-effect'
 import { Fade } from 'react-awesome-reveal'
+import photoDownload from 'assets/mac.jpg'
 
 export const Main = () => {
   return (
@@ -39,7 +40,9 @@ export const Main = () => {
 
               <Button variant={'outlined'}>
                 <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
-                Download CV
+                <a href={photoDownload} target="_blank" rel="noopener noreferrer" download>
+                  Download CV
+                </a>
               </Button>
             </S.ButtonWrapper>
           </S.MainWrapper>
