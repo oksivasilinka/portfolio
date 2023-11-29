@@ -1,6 +1,7 @@
 import { Project } from 'layout/sections/portfolio/project/project'
 import styled from 'styled-components'
-import cards from '../../../assets/portfolio-cards.webp'
+import imgCards from '../../../assets/portfolio-cards.webp'
+import imgTasks from '../../../assets/portfolio-tasks.webp'
 import photo from '../../../assets/mac.jpg'
 import { Container, FlexWrapper, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
@@ -10,7 +11,7 @@ const projects = [
     name: 'Learning Platform',
     demo: 'https://it-inc-cards.vercel.app',
     code: 'https://github.com/r2adler/it-inc-cards',
-    photo: cards,
+    photo: imgCards,
     description:
       'This application is designed for effective learning through flashcards that contain questions and answers. Users can create their own sets of flashcards or utilize pre-made decks. The application also allows adding images and videos to the flashcards to enhance information retention.',
   },
@@ -33,8 +34,8 @@ const projects = [
   {
     name: 'Check Flow',
     demo: '#',
-    code: '#',
-    photo: photo,
+    code: 'https://github.com/oksivasilinka/checkFlow',
+    photo: imgTasks,
     description:
       'The "Check Flow" project provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. Users can easily add new tasks, set their completion status, modify deadlines, and priorities.',
   },

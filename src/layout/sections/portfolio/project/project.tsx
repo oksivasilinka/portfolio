@@ -13,7 +13,7 @@ export const Project = ({ name, description, demo, code, photo }: Props) => {
   return (
     <S.Project>
       <S.ImageWrapper>
-        <S.Photo src={photo} alt={'photo'} />
+        <S.Photo src={photo} alt={name} />
         <S.ButtonWrapper>
           <Button>
             <a href={demo}>Demo</a>
