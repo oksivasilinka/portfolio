@@ -5,17 +5,17 @@ import { Container, FlexWrapper, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
 
 const skills = [
+  { idIcon: 'js', title: 'Java Script' },
+  { idIcon: 'ts', title: 'Type Script' },
   { idIcon: 'react', title: 'React' },
   { idIcon: 'redux', title: 'Redux' },
-  { idIcon: 'js', title: 'Java Script' },
+  { idIcon: 'axios', title: 'Axios' },
+  { idIcon: 'storybook', title: 'Storybook' },
   { idIcon: 'git', title: 'Git' },
   { idIcon: 'html', title: 'HTML' },
   { idIcon: 'css', title: 'CSS' },
   { idIcon: 'sass', title: 'SASS' },
   { idIcon: 'styled', title: 'Styled Components' },
-  { idIcon: 'ts', title: 'Type Script' },
-  { idIcon: 'storybook', title: 'Storybook' },
-  { idIcon: 'axios', title: 'Axios' },
 ]
 
 export const Skills = () => {

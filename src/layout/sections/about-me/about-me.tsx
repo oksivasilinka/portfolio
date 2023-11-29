@@ -1,6 +1,6 @@
 import { Container, SectionText, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
-import photo from 'assets/main-photo.webp'
+import photo from 'assets/second-photo.webp'
 import { S } from './about-me_styles'
 
 export const AboutMe = () => {

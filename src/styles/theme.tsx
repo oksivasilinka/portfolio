@@ -3,6 +3,7 @@ export const theme = {
     primaryBg: '#0C070A',
     secondaryBg: '#131012',
     accent: '#9EFF00',
+    secondary: '#D5FF8F',
     font: '#FFFFFF',
   },
   shadow: {

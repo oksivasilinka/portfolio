@@ -27,7 +27,7 @@ export const Project = ({ name, description, demo, code, photo }: Props) => {
         <S.Title>{name}</S.Title>
         <S.Description>{description}</S.Description>
       </S.InfoWrapper>
-      <S.Link href={demo}>See project</S.Link>
+      <S.Link href={demo}>View project</S.Link>
     </S.Project>
   )
 }

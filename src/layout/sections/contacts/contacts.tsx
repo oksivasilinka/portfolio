@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal'
 const icons = [
   { url: 'https://www.linkedin.com/in/oksana--kovalchuk/', id: 'linkedin' },
   { url: 'https://t.me/oksivasilinka', id: 'telegram' },
-  { url: '#', id: 'email' },
+  { url: 'mailto:oksana.s.kovalchuk@gmail.com', id: 'email' },
   { url: 'https://github.com/oksivasilinka', id: 'github' },
 ]
 
