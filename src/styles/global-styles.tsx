@@ -14,12 +14,32 @@ export const GlobalStyles = createGlobalStyle`
   }
   html, body {
     min-width: 360px;
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      -webkit-text-fill-color: ${theme.colors.font};
+      -webkit-box-shadow: 0 0 0 1000px ${theme.colors.primaryBg} inset;
+      transition: background-color 5000s ease-in-out 0s;
+      background: -webkit-linear-gradient(
+              top,
+              rgba(255, 255, 255, 0) 0%,
+              rgba(0, 174, 255, 0.04) 50%,
+              rgba(255, 255, 255, 0) 51%,
+              rgba(0, 174, 255, 0.03) 100%
+      );
+    }
   }
 
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: ${theme.colors.font};
-    cursor: default;
     line-height: 1.2;
     &:focus-visible {
       outline: 1px solid ${theme.colors.font};
@@ -29,7 +49,6 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
     color: ${theme.colors.font};
-    cursor: pointer;
   }
 
   ul {
@@ -42,14 +61,7 @@ export const GlobalStyles = createGlobalStyle`
       outline: 1px solid ${theme.colors.font};
     }
   }
-
-  button, input {
-    cursor: pointer;
-  }
   
-  input {
-    cursor: auto;
-  }
   section {
     padding-bottom: 100px;
     @media ${theme.media.mobile} {
