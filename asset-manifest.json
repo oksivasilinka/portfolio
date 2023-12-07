@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.8ad56efe.css",
-    "main.js": "/my-portfolio/static/js/main.6c6b176a.js",
+    "main.js": "/my-portfolio/static/js/main.e00fece3.js",
     "static/js/787.25eaef86.chunk.js": "/my-portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/main-photo.webp": "/my-portfolio/static/media/main-photo.0b4e3feb5d55cc178593.webp",
     "static/media/second-photo.webp": "/my-portfolio/static/media/second-photo.27139f40eae3733e7fc2.webp",
     "static/media/mac.jpg": "/my-portfolio/static/media/mac.b1ab7a1134c8126231bb.jpg",
     "static/media/icons-sprite.svg": "/my-portfolio/static/media/icons-sprite.9a83d7a204b663c5cc5def3f478af145.svg",
     "static/media/portfolio-cards.webp": "/my-portfolio/static/media/portfolio-cards.7b7bdce8d91d206a15b5.webp",
+    "static/media/portfolio-network.webp": "/my-portfolio/static/media/portfolio-network.01442b94beefbf865a3a.webp",
     "static/media/plus-jakarta-sans-latin-500-normal.woff": "/my-portfolio/static/media/plus-jakarta-sans-latin-500-normal.74aa5110f96917e8d436.woff",
     "static/media/plus-jakarta-sans-latin-300-normal.woff": "/my-portfolio/static/media/plus-jakarta-sans-latin-300-normal.1206ec7464ce1d9ac2f0.woff",
     "static/media/plus-jakarta-sans-latin-700-normal.woff": "/my-portfolio/static/media/plus-jakarta-sans-latin-700-normal.1f53a4844c133092feb0.woff",
@@ -51,11 +52,11 @@
     "static/media/plus-jakarta-sans-cyrillic-ext-500-normal.woff2": "/my-portfolio/static/media/plus-jakarta-sans-cyrillic-ext-500-normal.4c601838f1a890416219.woff2",
     "index.html": "/my-portfolio/index.html",
     "main.8ad56efe.css.map": "/my-portfolio/static/css/main.8ad56efe.css.map",
-    "main.6c6b176a.js.map": "/my-portfolio/static/js/main.6c6b176a.js.map",
+    "main.e00fece3.js.map": "/my-portfolio/static/js/main.e00fece3.js.map",
     "787.25eaef86.chunk.js.map": "/my-portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ad56efe.css",
-    "static/js/main.6c6b176a.js"
+    "static/js/main.e00fece3.js"
   ]
 }
