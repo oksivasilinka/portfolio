@@ -2,6 +2,7 @@ import { Project } from 'layout/sections/portfolio/project/project'
 import styled from 'styled-components'
 import imgCards from '../../../assets/portfolio-cards.webp'
 import imgTasks from '../../../assets/portfolio-tasks.webp'
+import imgNetwork from '../../../assets/portfolio-network.webp'
 import photo from '../../../assets/mac.jpg'
 import { Container, FlexWrapper, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
@@ -17,9 +18,9 @@ const projects = [
   },
   {
     name: 'Friend Connect',
-    demo: '#',
-    code: '#',
-    photo: photo,
+    demo: 'https://oksivasilinka.github.io/friendConnect',
+    code: 'https://github.com/oksivasilinka/friendConnect',
+    photo: imgNetwork,
     description:
       'Friend Connect is a web application that serves as a social networking platform. It provides users with a platform to connect, interact, and share content with friends and acquaintances. With personalized profiles, messaging functionality, and news feeds, Friend Connect creates a vibrant online community where users can stay connected and engage with their social circles.',
   },
@@ -33,7 +34,7 @@ const projects = [
   },
   {
     name: 'Check Flow',
-    demo: '#',
+    demo: 'https://oksivasilinka.github.io/checkFlow',
     code: 'https://github.com/oksivasilinka/checkFlow',
     photo: imgTasks,
     description:
