@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import imgCards from 'assets/portfolio/cards.webp'
 import imgTasks from 'assets/portfolio/tasks.webp'
 import imgNetwork from 'assets/portfolio/network.webp'
-import photo from 'assets/portfolio/mac.jpg'
 import { Container, FlexWrapper, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
 
