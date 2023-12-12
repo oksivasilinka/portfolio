@@ -47,4 +47,9 @@ const StyledGoTopButton = styled.button`
     scale: 1.4;
     transition: ${theme.animations.transitions};
   }
+  @media ${theme.media.tablet} {
+    &:hover {
+      scale: 1.05;
+    }
+  }
 `

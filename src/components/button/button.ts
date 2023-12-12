@@ -20,21 +20,25 @@ export const Button = styled.button<Props>`
   a {
     color: ${theme.colors.primaryBg};
   }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: ${theme.shadow.main};
+    transition: ${theme.animations.transitions};
+  }
 
   ${(props) =>
     props.variant === 'outlined' &&
     css<Props>`
       background-color: transparent;
-      color: ${theme.colors.accent};
       outline: 2px solid ${theme.colors.accent};
 
       a {
         color: ${theme.colors.accent};
       }
     `}
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: ${theme.shadow.main};
-    transition: ${theme.animations.transitions};
+  @media ${theme.media.tablet} {
+    &:hover {
+      transform: scale(1);
+    }
   }
 `

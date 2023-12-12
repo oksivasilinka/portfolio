@@ -25,14 +25,6 @@ const projects = [
       'Friend Connect is a web application that serves as a social networking platform. It provides users with a platform to connect, interact, and share content with friends and acquaintances. With personalized profiles, messaging functionality, and news feeds, Friend Connect creates a vibrant online community where users can stay connected and engage with their social circles.',
   },
   {
-    name: 'Home Style Store',
-    demo: '#',
-    code: '#',
-    photo: photo,
-    description:
-      'Home Style Store is an online furniture store application that offers a wide selection of modern furniture and home decor products. The application features an attractive and user-friendly interface, allowing customers to easily find and purchase the desired items.',
-  },
-  {
     name: 'Check Flow',
     demo: 'https://oksivasilinka.github.io/checkFlow',
     code: 'https://github.com/oksivasilinka/checkFlow',

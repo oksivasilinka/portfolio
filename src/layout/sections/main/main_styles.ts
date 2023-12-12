@@ -38,6 +38,7 @@ const PhotoWrapper = styled.div`
   }
 `
 const Photo = styled.img`
+  position: relative;
   max-width: 410px;
   width: 100%;
   object-fit: cover;

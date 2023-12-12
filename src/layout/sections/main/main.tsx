@@ -38,15 +38,17 @@ export const Main = () => {
               </Button>
 
               <Button variant={'outlined'}>
-                <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
-                <a
-                  href={'https://drive.google.com/uc?export=download&id=14TOKk6zEnYszNCMPQGq_DZNJYxxaRy_B'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download
-                >
-                  Download CV
-                </a>
+                <>
+                  <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
+                  <a
+                    href={'https://drive.google.com/uc?export=download&id=14TOKk6zEnYszNCMPQGq_DZNJYxxaRy_B'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                  >
+                    Download CV
+                  </a>
+                </>
               </Button>
             </S.ButtonWrapper>
           </S.MainWrapper>

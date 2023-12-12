@@ -3,25 +3,28 @@ import styled from 'styled-components'
 import { Field } from 'components/field/field'
 
 import emailjs from '@emailjs/browser'
-import { FormEvent, useRef } from 'react'
+import { FormEvent, useRef, useState } from 'react'
+import { SectionText } from 'components/section-text'
 
 export const ContactsForm = () => {
   const form = useRef<HTMLFormElement | null>(null)
+  const [formSubmitted, setFormSubmitted] = useState(false)
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-
     if (!form.current) return
+    let value = e.currentTarget
 
     emailjs.sendForm('service_knpk8sm', 'template_iot9u2r', form.current, '4D4Sqo0622kiedngy').then(
       (result) => {
+        setFormSubmitted(true)
         console.log(result.text)
+        value.reset()
       },
       (error) => {
         console.log(error.text)
       },
     )
-    e.currentTarget.reset()
   }
 
   return (
@@ -30,6 +33,7 @@ export const ContactsForm = () => {
       <Field type={'email'} label={'Your Email'} name={'email'} />
       <Field label={'Your Message'} name={'message'} />
       <Button type={'submit'}>Send message</Button>
+      {formSubmitted && <SectionText>The form has been submitted. I will answer you very soon!</SectionText>}
     </StyledForm>
   )
 }
