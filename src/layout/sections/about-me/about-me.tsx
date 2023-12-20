@@ -11,19 +11,16 @@ export const AboutMe = () => {
         <Fade>
           <S.Wrapper>
             <SectionText>
-              Hello! My name is Oksana. I am a frontend developer from Minsk.
+              Hello! My name is Oksana. I am a frontend developer with more than 1 year of experience in SPA development
+              using TypeScript, JavaScript, React, Redux, Redux-toolkit.
               <br />
+              <br />I am constantly improving in these technologies, and am also actively studying Next.js and React
+              Native to expand my capabilities and achieve a higher level of income in my work. My main development
+              priority is to create efficient and clean code that can be easily maintained and scaled. I strive to
+              produce high-quality, convenient and accessible user interfaces.
               <br />
-              I have experience creating a SPA using Type Script, Java Script, React, Redux, Redux toolkit, RTK Query.
-              <br />
-              <br />
-              I always strive for self-development and constantly improve my skills by studying new technologies and
-              methodologies. I really enjoy learning new tools and approaches, as well as opportunities to apply them in
-              my work.
-              <br />
-              <br />
-              My priority in development is to create efficient and clean code that is easy to maintain and scale. I
-              also try to create high-quality and intuitive user interfaces.
+              <br />I will be glad to consider different options for cooperation (office, remote, hybrid, part-time and
+              full-time).
             </SectionText>
             <S.Photo src={photo} alt={'main-photo'} />
           </S.Wrapper>
