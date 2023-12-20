@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fb0c9bfb.css",
-    "main.js": "/portfolio/static/js/main.8ee9540f.js",
+    "main.js": "/portfolio/static/js/main.0ea24987.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/main-photo.webp": "/portfolio/static/media/main-photo.0b4e3feb5d55cc178593.webp",
     "static/media/second-photo.webp": "/portfolio/static/media/second-photo.27139f40eae3733e7fc2.webp",
-    "static/media/mac.jpg": "/portfolio/static/media/mac.b1ab7a1134c8126231bb.jpg",
     "static/media/icons-sprite.svg": "/portfolio/static/media/icons-sprite.9a83d7a204b663c5cc5def3f478af145.svg",
     "static/media/cards.webp": "/portfolio/static/media/cards.7b7bdce8d91d206a15b5.webp",
     "static/media/network.webp": "/portfolio/static/media/network.01442b94beefbf865a3a.webp",
@@ -52,11 +51,11 @@
     "static/media/plus-jakarta-sans-cyrillic-ext-500-normal.woff2": "/portfolio/static/media/plus-jakarta-sans-cyrillic-ext-500-normal.4c601838f1a890416219.woff2",
     "index.html": "/portfolio/index.html",
     "main.fb0c9bfb.css.map": "/portfolio/static/css/main.fb0c9bfb.css.map",
-    "main.8ee9540f.js.map": "/portfolio/static/js/main.8ee9540f.js.map",
+    "main.0ea24987.js.map": "/portfolio/static/js/main.0ea24987.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb0c9bfb.css",
-    "static/js/main.8ee9540f.js"
+    "static/js/main.0ea24987.js"
   ]
 }
