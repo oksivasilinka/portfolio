@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fb0c9bfb.css",
-    "main.js": "/portfolio/static/js/main.0ea24987.js",
+    "main.js": "/portfolio/static/js/main.3d33d258.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/main-photo.webp": "/portfolio/static/media/main-photo.0b4e3feb5d55cc178593.webp",
     "static/media/second-photo.webp": "/portfolio/static/media/second-photo.27139f40eae3733e7fc2.webp",
@@ -51,11 +51,11 @@
     "static/media/plus-jakarta-sans-cyrillic-ext-500-normal.woff2": "/portfolio/static/media/plus-jakarta-sans-cyrillic-ext-500-normal.4c601838f1a890416219.woff2",
     "index.html": "/portfolio/index.html",
     "main.fb0c9bfb.css.map": "/portfolio/static/css/main.fb0c9bfb.css.map",
-    "main.0ea24987.js.map": "/portfolio/static/js/main.0ea24987.js.map",
+    "main.3d33d258.js.map": "/portfolio/static/js/main.3d33d258.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb0c9bfb.css",
-    "static/js/main.0ea24987.js"
+    "static/js/main.3d33d258.js"
   ]
 }
