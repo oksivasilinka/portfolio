@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import imgCards from 'assets/portfolio/cards.webp'
 import imgTasks from 'assets/portfolio/tasks.webp'
 import imgNetwork from 'assets/portfolio/network.webp'
+import imgHomeStore from 'assets/portfolio/homeStore.webp'
 import { Container, FlexWrapper, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
 
@@ -30,6 +31,13 @@ const projects = [
     photo: imgTasks,
     description:
       'The "Check Flow" project provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. Users can easily add new tasks, set their completion status, modify deadlines, and priorities.',
+  },
+  {
+    name: 'Home Store',
+    demo: 'https://home-store-rouge.vercel.app/',
+    code: 'https://github.com/oksivasilinka/homeStore',
+    photo: imgHomeStore,
+    description: 'HomeStore is an online furniture store that is under active development.',
   },
 ]
 
