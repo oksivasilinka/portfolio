@@ -3,6 +3,7 @@ import { Skill } from 'layout/sections/skills/skill/skill'
 import { theme } from 'styles/theme'
 import { Container, FlexWrapper, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
+import { useTranslation } from 'react-i18next'
 
 const skills = [
   { idIcon: 'js', title: 'Java Script' },
@@ -19,10 +20,14 @@ const skills = [
 ]
 
 export const Skills = () => {
+  const { t } = useTranslation()
   return (
     <StyledSkills id={'skills'}>
       <Container>
-        <SectionTitle>Skills</SectionTitle>
+        <SectionTitle>
+          {/*Skills*/}
+          {t('title', { ns: 'skills' })}
+        </SectionTitle>
         <SkillsWrapper>
           <FlexWrapper justify={'center'} gap={'50px'} wrap={'wrap'}>
             <Fade damping={0.1} direction={'up'}>

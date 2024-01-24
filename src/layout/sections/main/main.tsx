@@ -3,8 +3,10 @@ import { Button, Container, Icon } from 'components'
 import { S } from './main_styles'
 import Typewriter from 'typewriter-effect'
 import { Fade } from 'react-awesome-reveal'
+import { useTranslation } from 'react-i18next'
 
 export const Main = () => {
+  const { t } = useTranslation()
   return (
     <S.Main id={'home'}>
       <Container>
@@ -14,15 +16,12 @@ export const Main = () => {
               <S.Photo src={photo} alt={'main-photo'} />
             </S.PhotoWrapper>
             <S.InfoWrapper>
-              <S.Name>
-                Oksana <br />
-                Kovalchuk
-              </S.Name>
+              <S.Name>{t('name', { ns: 'main' })}</S.Name>
               <S.MainTitle>
-                <p> Frontend Developer</p>
+                <p> {t('position', { ns: 'main' })}</p>
                 <Typewriter
                   options={{
-                    strings: ['Frontend Developer'],
+                    strings: [`${t('position', { ns: 'main' })}`],
                     autoStart: true,
                     loop: true,
                   }}
@@ -33,7 +32,7 @@ export const Main = () => {
               <Button>
                 <S.NavLink to={'contacts'} smooth={true}>
                   <Icon id={'send'} height={'20'} width={'25'} viewBox={'0 0 20 20'} />
-                  Send Message
+                  {t('sendButton', { ns: 'main' })}
                 </S.NavLink>
               </Button>
 
@@ -46,7 +45,7 @@ export const Main = () => {
                     rel="noopener noreferrer"
                     download
                   >
-                    Download CV
+                    {t('downloadButton', { ns: 'main' })}
                   </a>
                 </>
               </Button>

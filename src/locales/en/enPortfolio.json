@@ -1,0 +1,10 @@
+{
+  "title": "Portfolio",
+  "descriptionCards": "This application is designed for effective learning through flashcards that contain questions and answers. Users can create their own sets of flashcards or utilize pre-made decks. The application also allows adding images and videos to the flashcards to enhance information retention.",
+  "descriptionSocialNetwork": "Friend Connect is a web application that serves as a social networking platform. It provides users with a platform to connect, interact, and share content with friends and acquaintances. With personalized profiles, messaging functionality, and news feeds, Friend Connect creates a vibrant online community where users can stay connected and engage with their social circles",
+  "descriptionCheckFlow": "The \"Check Flow\" project provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. Users can easily add new tasks, set their completion status.",
+  "descriptionHomeStore": "HomeStore is an online furniture store that is under active development.",
+  "buttonDemo": "Demo",
+  "buttonCode": "Code",
+  "LinkView": "View project"
+}

@@ -5,10 +5,12 @@ import { Field } from 'components/field/field'
 import emailjs from '@emailjs/browser'
 import { FormEvent, useRef, useState } from 'react'
 import { SectionText } from 'components/section-text'
+import { useTranslation } from 'react-i18next'
 
 export const ContactsForm = () => {
   const form = useRef<HTMLFormElement | null>(null)
   const [formSubmitted, setFormSubmitted] = useState(false)
+  const { t } = useTranslation()
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -29,11 +31,11 @@ export const ContactsForm = () => {
 
   return (
     <StyledForm ref={form} onSubmit={sendEmail}>
-      <Field label={'Your Name'} name={'name'} />
-      <Field type={'email'} label={'Your Email'} name={'email'} />
-      <Field label={'Your Message'} name={'message'} />
-      <Button type={'submit'}>Send message</Button>
-      {formSubmitted && <SectionText>The form has been submitted. I will answer you very soon!</SectionText>}
+      <Field label={`${t('fieldName', { ns: 'contacts' })}`} name={'name'} />
+      <Field type={'email'} label={`${t('fieldEmail', { ns: 'contacts' })}`} name={'email'} />
+      <Field label={`${t('fieldMessage', { ns: 'contacts' })}`} name={'message'} />
+      <Button type={'submit'}>{t('sendButton', { ns: 'main' })}</Button>
+      {formSubmitted && <SectionText>{t('formSubmittedText', { ns: 'contacts' })}</SectionText>}
     </StyledForm>
   )
 }

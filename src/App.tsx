@@ -10,6 +10,7 @@ import { Footer } from 'layout/sections/footer/footer'
 import { Particle } from 'components/particle/particle'
 import { GoTopButton } from 'components/go-top-button/go-top-button'
 import { Cursor } from 'components/cursor/cursor'
+import { LanguageSwitcher } from 'layout/languageSwicher/languageSwitcher'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Cursor />
       <Particle />
       <Header />
+      <LanguageSwitcher />
       <Main />
       <AboutMe />
       <Skills />

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { SocialIcons } from 'layout/sections/contacts/social-icons/social-icons'
 import { ContactsForm, Container, FlexWrapper, SectionText, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
+import { useTranslation } from 'react-i18next'
 
 const icons = [
   { url: 'https://www.linkedin.com/in/oksana--kovalchuk/', id: 'linkedin' },
@@ -11,16 +12,15 @@ const icons = [
 ]
 
 export const Contacts = () => {
+  const { t } = useTranslation()
   return (
     <StyledContacts id={'contacts'}>
       <Container>
-        <SectionTitle>Contacts</SectionTitle>
+        <SectionTitle>{t('title', { ns: 'contacts' })}</SectionTitle>
 
         <Fade>
           <FlexWrapper gap={'40px'} justify={'center'} direction={'column'}>
-            <SectionText>
-              Send me a message, I will contact you shortly. Or contact me in a way more convenient for you
-            </SectionText>
+            <SectionText>{t('description', { ns: 'contacts' })}</SectionText>
             <SocialIcons icons={icons} />
             <ContactsForm />
           </FlexWrapper>

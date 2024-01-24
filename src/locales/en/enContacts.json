@@ -1,0 +1,8 @@
+{
+  "title": "Contacts",
+  "description": "Send me a message, I will contact you shortly. Or contact me in a way more convenient for you",
+  "fieldName": "Your Name",
+  "fieldEmail": "Your Email",
+  "fieldMessage": "Your Message",
+  "formSubmittedText": "The form has been submitted. I will answer you very soon!"
+}
