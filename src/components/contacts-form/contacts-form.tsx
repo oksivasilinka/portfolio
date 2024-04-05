@@ -4,12 +4,12 @@ import { Field } from 'components/field/field'
 
 import emailjs from '@emailjs/browser'
 import { FormEvent, useRef, useState } from 'react'
-import { SectionText } from 'components/section-text'
 import { useTranslation } from 'react-i18next'
+import { Modal } from 'components'
 
 export const ContactsForm = () => {
   const form = useRef<HTMLFormElement | null>(null)
-  const [formSubmitted, setFormSubmitted] = useState(false)
+  const [isShowModal, setIsShowModal] = useState(false)
   const { t } = useTranslation()
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -18,9 +18,8 @@ export const ContactsForm = () => {
     let value = e.currentTarget
 
     emailjs.sendForm('service_knpk8sm', 'template_iot9u2r', form.current, '4D4Sqo0622kiedngy').then(
-      (result) => {
-        setFormSubmitted(true)
-        console.log(result.text)
+      () => {
+        setIsShowModal(true)
         value.reset()
       },
       (error) => {
@@ -35,7 +34,7 @@ export const ContactsForm = () => {
       <Field type={'email'} label={`${t('fieldEmail', { ns: 'contacts' })}`} name={'email'} />
       <Field label={`${t('fieldMessage', { ns: 'contacts' })}`} name={'message'} />
       <Button type={'submit'}>{t('sendButton', { ns: 'main' })}</Button>
-      {formSubmitted && <SectionText>{t('formSubmittedText', { ns: 'contacts' })}</SectionText>}
+      {isShowModal && <Modal text={t('formSubmittedText', { ns: 'contacts' })} onClick={() => setIsShowModal(false)} />}
     </StyledForm>
   )
 }
