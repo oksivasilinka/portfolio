@@ -1,11 +1,8 @@
-import { Button } from 'components/button/button'
+import { Button, Field, Modal } from 'components'
 import styled from 'styled-components'
-import { Field } from 'components/field/field'
-
 import emailjs from '@emailjs/browser'
 import { FormEvent, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Modal } from 'components'
 
 export const ContactsForm = () => {
   const form = useRef<HTMLFormElement | null>(null)

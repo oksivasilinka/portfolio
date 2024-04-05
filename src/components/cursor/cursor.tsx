@@ -1,21 +1,15 @@
 import AnimatedCursor from 'react-animated-cursor'
 import { theme } from 'styles/theme'
 import styled from 'styled-components'
-import { useEffect, useState } from 'react'
 
-export const Cursor = () => {
-  const [width, setWidth] = useState(window.innerWidth)
-  const breakPoint = 768
+type Props = {
+  isMobile: boolean
+}
 
-  useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener('resize', handleWindowResize)
-    return () => window.removeEventListener('resize', handleWindowResize)
-  }, [])
-
+export const Cursor = ({ isMobile }: Props) => {
   return (
     <StyledCursor>
-      {width > breakPoint && (
+      {!isMobile && (
         <AnimatedCursor
           innerSize={10}
           outerSize={25}

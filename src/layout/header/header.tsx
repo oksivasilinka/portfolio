@@ -2,21 +2,16 @@ import { DesktopMenu } from 'layout/header/header-menu/desktop-menu/desktop-menu
 import { Container } from 'components'
 import { S } from './header_styles'
 import { MobileMenu } from 'layout/header/header-menu/mobile-menu/mobile-menu'
-import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 export type MenuItem = { href: string; title: string }
 
-export const Header = () => {
-  const [width, setWidth] = useState(window.innerWidth)
-  const breakPoint = 768
-  const { t } = useTranslation()
+type Props = {
+  isMobile: boolean
+}
 
-  useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener('resize', handleWindowResize)
-    return () => window.removeEventListener('resize', handleWindowResize)
-  }, [])
+export const Header = ({ isMobile }: Props) => {
+  const { t } = useTranslation()
 
   const menuItems = [
     { href: 'home', title: `${t('menuHome', { ns: 'header' })}` },
@@ -29,7 +24,8 @@ export const Header = () => {
   return (
     <S.Header>
       <Container>
-        {width > breakPoint ? <DesktopMenu menuItems={menuItems} /> : <MobileMenu menuItems={menuItems} />}
+        {isMobile && <MobileMenu menuItems={menuItems} />}
+        {!isMobile && <DesktopMenu menuItems={menuItems} />}
       </Container>
     </S.Header>
   )

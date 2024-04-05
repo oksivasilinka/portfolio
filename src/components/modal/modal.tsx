@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { SectionText } from 'components/section-text'
 import { theme } from 'styles/theme'
-import { CloseButton } from 'components'
+import { CloseButton, SectionText } from 'components'
 
 type Props = {
   text: string
@@ -38,6 +37,7 @@ const ModalWrapper = styled.div`
   box-shadow: ${theme.shadow.main};
   padding: 50px 30px;
   border-radius: 10px;
+
   p {
     text-align: center;
   }

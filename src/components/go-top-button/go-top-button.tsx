@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Icon } from 'components/icon'
+import { Icon } from 'components'
 import { theme } from 'styles/theme'
 import { animateScroll as scroll } from 'react-scroll'
 import { useEffect, useState } from 'react'

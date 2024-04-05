@@ -11,13 +11,15 @@ import { Particle } from 'components/particle/particle'
 import { GoTopButton } from 'components/go-top-button/go-top-button'
 import { Cursor } from 'components/cursor/cursor'
 import { LanguageSwitcher } from 'layout/languageSwicher/languageSwitcher'
+import useIsMobile from 'hooks/useIsMobile'
 
 function App() {
+  const isMobile = useIsMobile()
   return (
     <ThemeProvider theme={theme}>
-      <Cursor />
+      <Cursor isMobile={isMobile} />
       <Particle />
-      <Header />
+      <Header isMobile={isMobile} />
       <LanguageSwitcher />
       <Main />
       <AboutMe />

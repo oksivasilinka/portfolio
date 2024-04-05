@@ -12,9 +12,9 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         @media ${theme.media.tablet} {
-           &:hover {
-               all: unset;
-           }
+            &:hover {
+                all: unset;
+            }
         }
     }
 
