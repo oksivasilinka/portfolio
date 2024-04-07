@@ -1,7 +1,6 @@
-import { DesktopMenu } from 'layout/header/header-menu/desktop-menu/desktop-menu'
+import { DesktopMenu, MobileMenu } from './header-menu'
 import { Container } from 'components'
 import { S } from './header_styles'
-import { MobileMenu } from 'layout/header/header-menu/mobile-menu/mobile-menu'
 import { useTranslation } from 'react-i18next'
 
 export type MenuItem = { href: string; title: string }

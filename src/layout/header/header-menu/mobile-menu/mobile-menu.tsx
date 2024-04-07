@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { Menu } from 'layout/header/header-menu/menu/menu'
-import { MenuItem } from 'layout/header/header'
+import { Menu, MenuItem } from 'layout'
 
 import { S } from '../header-menu_styles'
 import { BurgerButton } from 'components'

@@ -1,4 +1,4 @@
-import { MenuItem } from 'layout/header/header'
+import { MenuItem } from 'layout'
 
 import { S } from '../header-menu_styles'
 

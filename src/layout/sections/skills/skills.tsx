@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Skill } from 'layout/sections/skills/skill/skill'
+import { Skill } from './skill'
 import { theme } from 'styles/theme'
 import { Container, FlexWrapper, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
@@ -11,7 +11,7 @@ const skills = [
   { idIcon: 'react', title: 'React' },
   { idIcon: 'redux', title: 'Redux Toolkit' },
   { idIcon: 'redux', title: 'RTK Query' },
-  { idIcon: 'router-dom', title: 'React Router Dom' },
+  { idIcon: 'router', title: 'React Router' },
   { idIcon: 'axios', title: 'Axios' },
   { idIcon: 'react-hook-form', title: 'React Hook Form' },
   { idIcon: 'redux', title: 'Redux' },

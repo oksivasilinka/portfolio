@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SocialIcons } from 'layout/sections/contacts/social-icons/social-icons'
+import { SocialIcons } from './social-icons'
 import { ContactsForm, Container, FlexWrapper, SectionText, SectionTitle } from 'components'
 import { Fade } from 'react-awesome-reveal'
 import { useTranslation } from 'react-i18next'

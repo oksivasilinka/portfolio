@@ -1,5 +1,4 @@
-import { Menu } from 'layout/header/header-menu/menu/menu'
-import { MenuItem } from 'layout/header/header'
+import { Menu, MenuItem } from 'layout'
 import { S } from '../header-menu_styles'
 
 type Props = {

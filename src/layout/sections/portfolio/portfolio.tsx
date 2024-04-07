@@ -1,4 +1,4 @@
-import { Project } from 'layout/sections/portfolio/project/project'
+import { Project } from './project'
 import styled from 'styled-components'
 import imgCards from 'assets/portfolio/cards.webp'
 import imgTasks from 'assets/portfolio/tasks.webp'
