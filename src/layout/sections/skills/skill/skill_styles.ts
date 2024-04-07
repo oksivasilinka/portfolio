@@ -8,6 +8,7 @@ const SkillTitle = styled.h3`
   text-align: center;
   padding-top: 20px;
   z-index: 10;
+  max-width: 110px;
 `
 
 const IconWrapper = styled.div`

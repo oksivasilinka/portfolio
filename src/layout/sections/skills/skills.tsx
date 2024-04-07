@@ -9,10 +9,20 @@ const skills = [
   { idIcon: 'js', title: 'Java Script' },
   { idIcon: 'ts', title: 'Type Script' },
   { idIcon: 'react', title: 'React' },
-  { idIcon: 'redux', title: 'Redux' },
+  { idIcon: 'redux', title: 'Redux Toolkit' },
+  { idIcon: 'redux', title: 'RTK Query' },
+  { idIcon: 'router-dom', title: 'React Router Dom' },
   { idIcon: 'axios', title: 'Axios' },
+  { idIcon: 'react-hook-form', title: 'React Hook Form' },
+  { idIcon: 'redux', title: 'Redux' },
   { idIcon: 'storybook', title: 'Storybook' },
+  { idIcon: 'ionic', title: 'Ionic' },
   { idIcon: 'git', title: 'Git' },
+  { idIcon: 'mui', title: 'Material UI' },
+  { idIcon: 'radix', title: 'Radix UI' },
+  { idIcon: 'antd', title: 'Ant Design' },
+  { idIcon: 'i18next', title: 'i18next' },
+  { idIcon: 'swagger', title: 'Swagger' },
   { idIcon: 'html', title: 'HTML' },
   { idIcon: 'css', title: 'CSS' },
   { idIcon: 'sass', title: 'SASS' },
@@ -24,15 +34,12 @@ export const Skills = () => {
   return (
     <StyledSkills id={'skills'}>
       <Container>
-        <SectionTitle>
-          {/*Skills*/}
-          {t('title', { ns: 'skills' })}
-        </SectionTitle>
+        <SectionTitle>{t('title', { ns: 'skills' })}</SectionTitle>
         <SkillsWrapper>
           <FlexWrapper justify={'center'} gap={'50px'} wrap={'wrap'}>
             <Fade damping={0.1} direction={'up'}>
               {skills.map((skill) => (
-                <Skill key={skill.idIcon} title={skill.title} idIcon={skill.idIcon} />
+                <Skill key={skill.title} title={skill.title} idIcon={skill.idIcon} />
               ))}
             </Fade>
           </FlexWrapper>
