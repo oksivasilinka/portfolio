@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fb0c9bfb.css",
-    "main.js": "/portfolio/static/js/main.d88d11ee.js",
+    "main.js": "/portfolio/static/js/main.ec33476c.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/main-photo.webp": "/portfolio/static/media/main-photo.0b4e3feb5d55cc178593.webp",
     "static/media/second-photo.webp": "/portfolio/static/media/second-photo.27139f40eae3733e7fc2.webp",
     "static/media/homeStore.webp": "/portfolio/static/media/homeStore.22a738711791bdb9c45e.webp",
-    "static/media/icons-sprite.svg": "/portfolio/static/media/icons-sprite.9a83d7a204b663c5cc5def3f478af145.svg",
+    "static/media/icons-sprite.svg": "/portfolio/static/media/icons-sprite.e684203c8312867b946693dfdb440f5c.svg",
     "static/media/cards.webp": "/portfolio/static/media/cards.7b7bdce8d91d206a15b5.webp",
     "static/media/network.webp": "/portfolio/static/media/network.01442b94beefbf865a3a.webp",
     "static/media/plus-jakarta-sans-latin-500-normal.woff": "/portfolio/static/media/plus-jakarta-sans-latin-500-normal.74aa5110f96917e8d436.woff",
@@ -52,11 +52,11 @@
     "static/media/plus-jakarta-sans-cyrillic-ext-500-normal.woff2": "/portfolio/static/media/plus-jakarta-sans-cyrillic-ext-500-normal.4c601838f1a890416219.woff2",
     "index.html": "/portfolio/index.html",
     "main.fb0c9bfb.css.map": "/portfolio/static/css/main.fb0c9bfb.css.map",
-    "main.d88d11ee.js.map": "/portfolio/static/js/main.d88d11ee.js.map",
+    "main.ec33476c.js.map": "/portfolio/static/js/main.ec33476c.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb0c9bfb.css",
-    "static/js/main.d88d11ee.js"
+    "static/js/main.ec33476c.js"
   ]
 }
