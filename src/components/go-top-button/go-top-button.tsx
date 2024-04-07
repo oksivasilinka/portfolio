@@ -2,21 +2,11 @@ import styled from 'styled-components'
 import { Icon } from 'components'
 import { theme } from 'styles/theme'
 import { animateScroll as scroll } from 'react-scroll'
-import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import useIsShowGoTopButton from 'hooks/useIsShowGoTopButton'
 
 export const GoTopButton = () => {
-  const [isShowButton, setIsShowButton] = useState(false)
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 200) {
-        setIsShowButton(true)
-      } else {
-        setIsShowButton(false)
-      }
-    })
-  }, [])
+  const isShowButton = useIsShowGoTopButton()
 
   return (
     <AnimatePresence>
@@ -47,6 +37,7 @@ const StyledGoTopButton = styled.button`
     scale: 1.4;
     transition: ${theme.animations.transitions};
   }
+
   @media ${theme.media.tablet} {
     &:hover {
       scale: 1.05;
