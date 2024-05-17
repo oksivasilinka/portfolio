@@ -40,7 +40,7 @@ export const Main = () => {
                 <>
                   <Icon id={'save'} height={'20'} width={'20'} viewBox={'0 0 20 20'} />
                   <a
-                    href={'https://drive.google.com/uc?export=download&id=14TOKk6zEnYszNCMPQGq_DZNJYxxaRy_B'}
+                    href={'https://drive.google.com/file/d/1wYKk-HxgywJugQgIuZvHfCSRxx9wD1p8/view?usp=sharing'}
                     target="_blank"
                     rel="noopener noreferrer"
                     download
